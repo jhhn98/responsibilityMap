@@ -1,0 +1,83 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>책무관리기준<span class="subTitle">Accountability Management Standards</span></h2>
+        <app-data-search *ngIf="default" [type]="'default'"></app-data-search>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="data_list_option">
+                <div class="option_align left"><!--전체 <span class="data_count">0</span>건--></div>
+                <div class="option_align right">
+                    <app-base-button label="엑셀 다운로드" icon="heroicons_solid:arrow-down-circle"></app-base-button>
+                </div>
+            </div>
+            <div class="board_wrap list">
+                <table #table class="dataTable">
+                    <caption>책무기술서 목록</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first" style="background:#f1f3f5;">#</th>
+                        <th scope="col" style="background:#f1f3f5;">책무기준 년도</th>
+                        <th scope="col" style="background:#f1f3f5;">책무기준 회차</th>
+                        <th scope="col" style="background:#f1f3f5;">대상기간(시작일자)</th>
+                        <th scope="col" style="background:#f1f3f5;">대상기간(종료일자)</th>
+                        <th scope="col" style="background:#f1f3f5;">이사회 승인완료일자</th>
+                        <th scope="col" style="background:#f1f3f5;">이사회 승인증빙자료</th>
+                        <th scope="col" style="background:#f1f3f5;">감독기관 제출 여부(Y/N)</th>
+                        <th scope="col" style="background:#f1f3f5;">감독기관 제출일</th>
+                        <th scope="col" style="background:#f1f3f5;">기준변경 사유</th>
+                        <th scope="col" style="background:#f1f3f5;">등록일</th>
+                        <th scope="col" style="background:#f1f3f5;">등록자</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first"><a [routerLink]="['/responsibility-map', 'responsibility-map-detail']" class="detailView"><span>상세보기</span></a>1</td>
+                        <td>2024</td>
+                        <td>3회차</td>
+                        <td>2024-05-01</td>
+                        <td>-</td>
+                        <td>2024-04-20</td>
+                        <td class="field-attachment">
+                            <div class="attachment-wrap">
+                                <button type="button" data-file-button class="attachment-button" (click)="toggleActive($event)"><mat-icon class="mat-icon" svgIcon="heroicons_outline:document-text"></mat-icon><span>첨부파일 리스트</span></button>
+                                <ul class="attachment-list">
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>N</td>
+                        <td>2024-04-20</td>
+                        <td>조직변경</td>
+                        <td>2024-04-21</td>
+                        <td>박OO</td>
+                    </tr>
+                    <tr>
+                        <td class="first"><a [routerLink]="['/responsibility-map', 'responsibility-map-detail']" class="detailView"><span>상세보기</span></a>2</td>
+                        <td>2024</td>
+                        <td>2회차</td>
+                        <td>2024-05-01</td>
+                        <td>-</td>
+                        <td>2024-04-20</td>
+                        <td class="field-attachment">
+                            <div class="attachment-wrap">
+                                <button type="button" data-file-button class="attachment-button" (click)="toggleActive($event)"><mat-icon class="mat-icon" svgIcon="heroicons_outline:document-text"></mat-icon><span>첨부파일 리스트</span></button>
+                                <ul class="attachment-list">
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                    <li><a href="#n" title="첨부파일"><span>첨부파일명.확장자</span></a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>N</td>
+                        <td>2024-04-20</td>
+                        <td>신규책무추가</td>
+                        <td>2024-04-21</td>
+                        <td>박OO</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

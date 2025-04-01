@@ -1,0 +1,486 @@
+[
+    {
+        "bbsDetailId": "bbs01_1",
+        "no": 1,
+        "title": "소비자금융그룹 이행점검 체크리스트_수정",
+        "author": "이종웅",
+        "category": "소비자금융그룹",
+        "date": "20250106",
+        "content": "bbs01_1 내용\n\n\n현대 사회에서 기술의 발전은 우리의 삶을 빠르게 변화시키고 있습니다. 과거에는 상상조차 하지 못했던 기술들이 이제는 일상 속에서 자연스럽게 활용되고 있으며, 이러한 변화는 앞으로도 계속될 것입니다. 특히 인공지능(AI), 사물인터넷(IoT), 블록체인, 클라우드 컴퓨팅과 같은 혁신적인 기술들은 다양한 산업 분야에서 중요한 역할을 하고 있으며, 이를 통해 우리는 더 편리하고 효율적인 삶을 누릴 수 있게 되었습니다.\n\n예를 들어, 인공지능 기술의 발전은 우리의 생활 방식에 큰 영향을 미치고 있습니다. AI는 단순한 데이터 분석을 넘어 인간과 유사한 사고 능력을 갖춘 프로그램으로 발전하고 있으며, 이를 통해 다양한 분야에서 활용되고 있습니다. 의료 분야에서는 AI를 활용한 진단 시스템이 환자의 상태를 빠르게 분석하여 정확한 치료법을 제시하고 있으며, 금융 분야에서는 인공지능 알고리즘이 실시간으로 시장 데이터를 분석하여 투자 전략을 수립하는 데 도움을 주고 있습니다.\n\n사물인터넷(IoT) 기술 역시 우리의 생활 속 깊숙이 자리 잡고 있습니다. 스마트 홈 시스템을 통해 우리는 스마트폰 하나로 가전제품을 원격으로 조작할 수 있으며, 스마트 시티 개념이 확산됨에 따라 교통, 에너지, 보안 등 다양한 공공 서비스가 자동화되고 있습니다. 예를 들어, IoT 기반의 교통 시스템은 실시간 교통 흐름을 분석하여 최적의 경로를 제공하고, 에너지 관리 시스템은 전력 사용량을 자동으로 조절하여 에너지 효율성을 극대화합니다.\n\n이와 함께 블록체인 기술도 주목받고 있습니다. 블록체인은 분산형 데이터 저장 방식으로 높은 보안성과 신뢰성을 보장하며, 금융, 물류, 헬스케어 등 다양한 산업에서 활용되고 있습니다. 특히 암호화폐를 기반으로 한 금융 시스템은 기존 은행 시스템을 보완하며, 보다 투명하고 효율적인 금융 거래를 가능하게 합니다. 또한, 블록체인 기술을 활용한 스마트 계약(Smart Contract)은 계약 실행 과정을 자동화하여 중개자의 개입 없이 안전한 거래를 보장합니다.\n\n마지막으로 클라우드 컴퓨팅의 발전 역시 눈여겨볼 만합니다. 클라우드 기술을 통해 기업과 개인 사용자는 물리적인 서버 없이도 대규모 데이터를 저장하고 처리할 수 있으며, 이를 통해 비용 절감과 업무 효율성을 동시에 높일 수 있습니다. 특히 최근에는 클라우드 기반 협업 도구가 활성화되면서 원격 근무와 비대면 업무 환경이 더욱 정착되고 있습니다.\n\n이처럼 혁신적인 기술들은 우리의 삶을 보다 편리하고 안전하게 변화시키고 있으며, 앞으로도 다양한 산업 분야에서 지속적으로 발전할 것입니다. 하지만 기술 발전이 가져오는 긍정적인 영향과 함께, 개인정보 보호, 보안 문제, 윤리적 고민 등도 함께 고려해야 할 중요한 과제입니다. 우리는 새로운 기술을 적극적으로 받아들이는 동시에, 그에 따른 사회적 책임과 문제 해결 방안에 대한 논의도 지속해야 합니다.\n\n기술이 발전함에 따라 우리는 더 나은 미래를 맞이할 수 있을 것입니다. 하지만 그 과정에서 기술이 단순한 도구가 아니라, 인간 중심의 가치를 실현하는 방향으로 발전할 수 있도록 모두가 함께 노력해야 할 것입니다.",
+        "file": [
+            {
+                "name": "전산본부 이행점검 체크리스트.XLSX",
+                "path": "/file/path/"
+            },
+            {
+                "name": "전산본부 이행점검 체크리스트2.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 4
+    },
+    {
+        "bbsDetailId": "bbs01_2",
+        "no": 2,
+        "title": "[자금시장그룹] 금감원 책무구조도 제출서류",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_2 내용",
+        "file": [
+            {
+                "name": "제출서류.XLSX",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 1
+    },
+    {
+        "bbsDetailId": "bbs01_3",
+        "no": 3,
+        "title": "[자금시장그룹] 책무 관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_3 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_4",
+        "no": 4,
+        "title": "[자금시장그룹] 책무관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_4 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 3
+    },
+    {
+        "bbsDetailId": "bbs01_5",
+        "no": 5,
+        "title": "[감사본부] 감사본부 - 금감원 책무구조도 제출서류",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_5 내용",
+        "file": [
+            {
+                "name": "책무구조도.hwp",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 5
+    },
+    {
+        "bbsDetailId": "bbs01_6",
+        "no": 6,
+        "title": "[감사본부] 이행점검 체크리스트",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_6 내용",
+        "file": [
+            {
+                "name": "체크리스트.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 6
+    },
+    {
+        "bbsDetailId": "bbs01_7",
+        "no": 7,
+        "title": "[감사본부] 책무관리 및 이행점검 매뉴얼",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_7 내용",
+        "file": [
+            {
+                "name": "매뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 5
+    },
+    {
+        "bbsDetailId": "bbs01_8",
+        "no": 8,
+        "title": "[금융소비자보호본부] 책무 관리 및 이행점검 매뉴얼",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_8 내용",
+        "file": [
+            {
+                "name": "첨부파일.zip",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_9",
+        "no": 9,
+        "title": "[금융소비자보호본부] 이행점검 체크리스트",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_9 내용",
+        "file": [
+            {
+                "name": "첨부파일1.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일2.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일3.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일4.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일5.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_10",
+        "no": 10,
+        "title": "[금융소비자보호본부] 금감원 책무구조도 제출서류",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_10 내용",
+        "file": [
+            {
+                "name": "구조도.xls",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.hwp",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.png",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_11",
+        "no": 11,
+        "title": "소비자금융그룹 이행점검 체크리스트_수정",
+        "author": "이종웅",
+        "category": "소비자금융그룹",
+        "date": "20250106",
+        "content": "bbs01_11 내용",
+        "file": [
+            {
+                "name": "전산본부 이행점검 체크리스트.XLSX",
+                "path": "/file/path/"
+            },
+            {
+                "name": "전산본부 이행점검 체크리스트2.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 4
+    },
+    {
+        "bbsDetailId": "bbs01_12",
+        "no": 12,
+        "title": "[자금시장그룹] 금감원 책무구조도 제출서류",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_12 내용",
+        "file": [
+            {
+                "name": "제출서류.XLSX",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 1
+    },
+    {
+        "bbsDetailId": "bbs01_13",
+        "no": 13,
+        "title": "[자금시장그룹] 책무 관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_13 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_14",
+        "no": 14,
+        "title": "[자금시장그룹] 책무관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_14 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 3
+    },
+    {
+        "bbsDetailId": "bbs01_15",
+        "no": 15,
+        "title": "[감사본부] 감사본부 - 금감원 책무구조도 제출서류",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_15 내용",
+        "file": [
+            {
+                "name": "책무구조도.hwp",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 5
+    },
+    {
+        "bbsDetailId": "bbs01_16",
+        "no": 16,
+        "title": "[감사본부] 이행점검 체크리스트",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_16 내용",
+        "file": [
+            {
+                "name": "체크리스트.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 6
+    },
+    {
+        "bbsDetailId": "bbs01_17",
+        "no": 17,
+        "title": "[감사본부] 책무관리 및 이행점검 매뉴얼",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_17 내용",
+        "file": [
+            {
+                "name": "매뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 5
+    },
+    {
+        "bbsDetailId": "bbs01_18",
+        "no": 18,
+        "title": "[금융소비자보호본부] 책무 관리 및 이행점검 매뉴얼",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_18 내용",
+        "file": [
+            {
+                "name": "첨부파일.zip",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_19",
+        "no": 19,
+        "title": "[금융소비자보호본부] 이행점검 체크리스트",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_19 내용",
+        "file": [
+            {
+                "name": "첨부파일1.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일2.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일3.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일4.pdf",
+                "path": "/file/path/"
+            },
+            {
+                "name": "첨부파일5.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_20",
+        "no": 20,
+        "title": "[금융소비자보호본부] 금감원 책무구조도 제출서류",
+        "author": "민지영",
+        "category": "금융소비자보호본부",
+        "date": "20250113",
+        "content": "bbs01_20 내용",
+        "file": [
+            {
+                "name": "구조도.xls",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.hwp",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.png",
+                "path": "/file/path/"
+            },
+            {
+                "name": "구조도.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_21",
+        "no": 21,
+        "title": "소비자금융그룹 이행점검 체크리스트_수정",
+        "author": "이종웅",
+        "category": "소비자금융그룹",
+        "date": "20250106",
+        "content": "bbs01_21 내용",
+        "file": [
+            {
+                "name": "전산본부 이행점검 체크리스트.XLSX",
+                "path": "/file/path/"
+            },
+            {
+                "name": "전산본부 이행점검 체크리스트2.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 4
+    },
+    {
+        "bbsDetailId": "bbs01_22",
+        "no": 22,
+        "title": "[자금시장그룹] 금감원 책무구조도 제출서류",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_22 내용",
+        "file": [
+            {
+                "name": "제출서류.XLSX",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 1
+    },
+    {
+        "bbsDetailId": "bbs01_23",
+        "no": 23,
+        "title": "[자금시장그룹] 책무 관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_23 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 0
+    },
+    {
+        "bbsDetailId": "bbs01_24",
+        "no": 24,
+        "title": "[자금시장그룹] 책무관리 및 이행점검 메뉴얼",
+        "author": "김지택",
+        "category": "자금시장그룹",
+        "date": "20250113",
+        "content": "bbs01_24 내용",
+        "file": [
+            {
+                "name": "메뉴얼.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 3
+    },
+    {
+        "bbsDetailId": "bbs01_25",
+        "no": 25,
+        "title": "[감사본부] 감사본부 - 금감원 책무구조도 제출서류",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_25 내용",
+        "file": [
+            {
+                "name": "책무구조도.hwp",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 5
+    },
+    {
+        "bbsDetailId": "bbs01_26",
+        "no": 26,
+        "title": "[감사본부] 이행점검 체크리스트",
+        "author": "김은경",
+        "category": "감사본부",
+        "date": "20250113",
+        "content": "bbs01_26 내용",
+        "file": [
+            {
+                "name": "체크리스트.pdf",
+                "path": "/file/path/"
+            }
+        ],
+        "viewCount": 6
+    }
+]

@@ -1,0 +1,92 @@
+<form>
+    <table class="dialogDataTable">
+        <caption>책무 세부 정보</caption>
+        <colgroup>
+            <col style="width:100px;">
+            <col>
+            <col style="width:130px;">
+            <col>
+        </colgroup>
+        <tbody>
+        <tr>
+            <th scope="row" class="first">직책</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>직책 eng title</mat-label>
+                    <input matInput value="준법감시본부장">
+                </mat-form-field>
+            </td>
+            <th scope="row" class="first">성명</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>성명 eng title</mat-label>
+                    <input matInput value="김한석">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">직위</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>직책 eng title</mat-label>
+                    <input matInput value="상무">
+                </mat-form-field>
+            </td>
+            <th scope="row" class="first">현 직책 부여일<br>(임원 선임일 등)</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field" title="현 직책 부여일">
+                    <mat-label>현 직책 부여일</mat-label>
+                    <!-- #docregion toggle -->
+                    <input matInput [matDatepicker]="picker1" value="2022-05-01">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                    <!-- #enddocregion toggle -->
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">겸직여부</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>겸직여부 eng title</mat-label>
+                    <input matInput value="Y">
+                </mat-form-field>
+            </td>
+            <th scope="row" class="first">겸직사항</th>
+            <td>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>겸직사항 eng title</mat-label>
+                    <input matInput value="준법감시인, 신용정보관리&middot;보호인 겸 개인정보보호책임자, 보고책임자(2022년 5월 1일)">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">소관부서</th>
+            <td colspan="3">
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>소관부서 eng title</mat-label>
+                    <input matInput value="① 준법감시부&nbsp;&nbsp;&nbsp;② AML부">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">주관회의체</th>
+            <td colspan="3">
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                    <mat-label>주관회의체 선택</mat-label>
+                    <mat-select>
+                        <mat-option value="option1">회의체 내용</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="data_list_option padding-0">
+        <div class="option_align left">
+        </div>
+        <div class="option_align right">
+            <app-base-button label="결재" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+<div class="process_area">
+    <div #circle class="circle" [ngStyle]="{'width': circleSizeInPx + 'px','height': circleSizeInPx + 'px'}">
+        <div class="inner-circle" [ngStyle]="{'width': innerCircleSize + 'px','height': innerCircleSize + 'px'}">
+            <div class="circle_text">
+                <div class="text_inner">
+                    <div> {{ title }}</div>
+                    <span>{{ progress }}%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

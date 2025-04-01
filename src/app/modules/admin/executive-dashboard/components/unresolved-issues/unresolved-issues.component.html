@@ -1,0 +1,43 @@
+<div class="grid w-full grid-cols-1 gap-8 xl:grid-cols-1">
+    <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full">
+        <div class="mx-6 py-6 overflow-x-auto">
+            <table #table class="dataTable">
+                <caption>부적정 점검항목 미조치 현황</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="first">관리번호</th>
+                    <th scope="col">부적정 항목</th>
+                    <th scope="col">발생월</th>
+                    <th scope="col">담당 부서</th>
+                    <th scope="col">부적정 사유</th>
+                    <th scope="col">상태</th>
+                    <th scope="col">조치예정일</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                <tr *ngFor="let row of tableData">
+                    <td class="text-right">
+                        <button type="button" class="detailView" (click)="openModal(row)"><span>상세보기 모달</span></button>
+                        {{ row.index }}
+                    </td>
+                    <td class="text-left">{{ row.items }}</td>
+                    <td>{{ row.occurrenceMM }}</td>
+                    <td>{{ row.department }}</td>
+                    <td class="text-left">{{ row.reason }}</td>
+                    <td [innerHTML]="row.status">{{ row.status }}</td>
+                    <td>{{ row.actionDate }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

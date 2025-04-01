@@ -1,0 +1,70 @@
+<div class="grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h4 class="text-2xl font-semibold leading-8 tracking-tight mb-3">'게시판명' 상세보기<span class="subTitle">english title</span></h4>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="data_list_option">
+                <div class="option_align left"></div><!-- 건수 -->
+                <div class="option_align right"><button type="button" class="btn_print" title="현재 게시물 프린트하기"><mat-icon class="mat-icon" svgIcon="heroicons_solid:printer"></mat-icon><span>현재 게시물 프린트하기</span></button></div>
+            </div>
+            <div class="board_wrap detail">
+                <ul class="dataBoard detail">
+                    <li class="bbs-title"><strong>{{ bbsDetailData.title }}</strong></li>
+                    <li class="bbs-post-information">
+                        <div class="info-element"><span>작성자</span><p>{{ bbsDetailData.author }}</p></div>
+                        <div class="info-element"><span>카테고리</span><p>{{ bbsDetailData.category }}</p></div>
+                        <div class="info-element"><span>등록일</span><p>{{ bbsDetailData.date }}</p></div>
+                        <div class="info-element"><span>조회수</span><p>{{ bbsDetailData.viewCount }}</p></div>
+                    </li>
+                    <li class="bbs-content"><div>{{ bbsDetailData.content }}</div></li>
+                    <li class="bbs-attachment">
+                        <div class="attachment-wrap" *ngIf="bbsDetailData.file && bbsDetailData.file.length > 0; else noFile">
+                            <button type="button" data-file-button class="attachment-button"><mat-icon class="mat-icon" svgIcon="heroicons_outline:folder-arrow-down"></mat-icon><span>전체 다운로드</span></button>
+                            <ul class="attachment-list">
+                                <li *ngFor="let bbsFile of bbsDetailData.file">
+                                    <a href="{{ bbsFile.path }}" title="{{ bbsFile.name }}"><mat-icon class="mat-icon" svgIcon="heroicons_outline:document-text"></mat-icon><span>{{ bbsFile.name }}</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ng-template #noFile><span>첨부 파일 없음</span></ng-template>
+                    </li>
+                </ul>
+            </div>
+            <div class="data_list_option">
+                <div class="option_align left"></div>
+                <div class="option_align right"><a [routerLink]="['/board', bbsId]" mat-flat-button class="custom-option-button btnList"><mat-icon class="mat-icon" svgIcon="heroicons_solid:bars-3"></mat-icon><em>목록</em></a></div>
+            </div>
+        </div>
+        <div class="bg-card flex flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <ul class="post-move">
+                <li class="prev">
+                    <a [routerLink]="['/board', bbsId, 'detail',  prevPost.bbsDetailId]" *ngIf="prevPost else noPostPrev">
+                        <mat-icon class="mat-icon" svgIcon="heroicons_solid:arrow-down-on-square"></mat-icon>
+                        <!--<span class="head">이전글</span>-->
+                        <strong class="title">{{ prevPost.title }}</strong>
+                        <span class="category">{{ prevPost.category }}</span>
+                        <span class="author">{{ prevPost.author }}</span>
+                        <span class="title">{{ prevPost.date }}</span>
+                        <span class="count">{{ prevPost.viewCount }}</span>
+                    </a>
+                    <ng-template #noPostPrev><div class="no-move prev"><span>이전글이 없습니다</span></div></ng-template>
+                </li>
+                <li class="next">
+                    <a [routerLink]="['/board', bbsId, 'detail', nextPost.bbsDetailId]" *ngIf="nextPost else noPostNext">
+                        <mat-icon class="mat-icon" svgIcon="heroicons_solid:arrow-down-on-square"></mat-icon>
+                        <!--<span class="head">다음글</span>-->
+                        <strong class="title">{{ nextPost.title }}</strong>
+                        <span class="category">{{ nextPost.category }}</span>
+                        <span class="author">{{ nextPost.author }}</span>
+                        <span class="title">{{ nextPost.date }}</span>
+                        <span class="count">{{ nextPost.viewCount }}</span>
+                    </a>
+                    <ng-template #noPostNext><div class="no-move next"><span>다음글이 없습니다.</span></div></ng-template>
+                </li>
+            </ul>
+            <!--<ul>
+                <li><span>이전글</span><p>{{이전글 카테고리}}</p><a href="이전글 링크">{{ 이전글 제목 }}</a><p>{{이전글 작성자}}</p><p>{{이전글날짜}}</p><p>{{이전글조회수}}</p></li>
+                <li><span>다음글</span><p>{{다음글 카테고리}}</p><a href="다음글 링크">{{ 다음글 제목 }}</a><p>{{다음글 작성자}}</p><p>{{다음글날짜}}</p><p>{{다음글조회수}}</p></li>
+            </ul>-->
+        </div>
+    </div>
+</div>

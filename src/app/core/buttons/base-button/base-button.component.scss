@@ -1,0 +1,40 @@
+.custom-option-button{display:inline-block;height:36px !important;min-height:36px !important;max-height:36px !important;margin:0 5px;padding:0 14px !important;background:#5f6e90 !important;border-radius:5px !important;color:#fff !important;
+/*    + .custom-option-button{margin:0 0 0 10px;}*/
+    em{display:inline-block;margin:2px 0 0 2px;font-size:14px;font-style:normal;line-height:16px;text-decoration:none;vertical-align:top;}
+    .mat-icon{width:20px;height:20px;min-width:20px;min-height:20px;margin-right:5px !important;font-size:20px;line-height:20px;}
+    svg{fill:#fff;}
+    &.btnList{background:#1e293b !important;
+        em{color:#fff !important;}
+        svg{fill:#fff !important;}
+    }
+    &.btnAdd,&.btnWrite,&.btnSave{background:#4f46e5 !important;
+        em{color:#fff !important;}
+        svg{fill:#fff !important;}
+    }
+    &.btnEdit{background: #20824b !important;
+        em{color:#fff !important;}
+        svg{fill:#fff !important;}
+    }
+    &.btnDelete,&.btnCancel{background:#f87171 !important;
+        em{color:#fff !important;}
+        svg{fill:#fff !important;}
+    }
+    &.btnDownload,&.btnFile,&.btnPrint{background:#5f6e90 !important;
+        em{color:#fff !important;}
+        svg{fill:#fff !important;}
+    }
+    &.btnModal{background:#c7d2fe !important;
+        em{color:#1e1b4b !important;}
+        svg{fill:#1e1b4b !important;}
+    }
+    &.small{height:26px !important;min-height:26px !important;max-height:26px !important;padding:0 5px !important;border-radius:3px !important;
+        em{margin:0 0 0 2px;}
+        .mat-icon{width:16px;height:16px;min-width:16px;min-height:16px;margin-right:5px !important;font-size:16px;line-height:16px;}
+    }
+}
+.custom-option-textButton{display:inline-block;
+    svg{fill:#4f46e5;}
+    em{display:inline-block;position:relative;padding:2px 0;color:#4f46e5;text-decoration:none;font-style:normal;
+        &::before{display:block;position:absolute;left:0;right:0;bottom:0;height:1px;background:#4f46e5;}
+    }
+}

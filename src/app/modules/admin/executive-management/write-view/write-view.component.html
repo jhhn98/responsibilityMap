@@ -1,0 +1,388 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>임원 관리조치 점검<span class="subTitle">Review executive management actions</span></h2>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="dataDetail">
+                <form>
+                    <h3>책무 및 주요 관리의무<span class="subTitle">Sub title</span></h3>
+                    <table class="dataTable type2 formTable">
+                        <caption>책무 및 주요 관리의무 작성 양식</caption>
+                        <colgroup>
+                            <col style="width:150px">
+                            <col>
+                            <col style="width:150px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="first">책무</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>책무 Data label</mat-label>
+                                    <input matInput value="준법감시업무와 관련된 책무">
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">책무 세부내용</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>책무 세부내용 Data label</mat-label>
+                                    <input matInput value="관련 법령&middot;내부통제기준 준수 여부를 관리할 책임">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">주요 관리의무</th>
+                            <td colspan="3">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>주요 관리의무 Data label</mat-label>
+                                    <input matInput value="정보교류차단 체계 구축, 금융사고 예방대책 평가 등 관련 법렬 및 내부통제기준 준수 여부 관리">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="mt-10">세부 관리항목 및 관리 담당자<span class="subTitle">Sub title</span></h3>
+                    <table class="dataTable type2 formTable">
+                        <caption>세부 관리항목 및 관리 담당자 작성 양식</caption>
+                        <colgroup>
+                            <col style="width:150px">
+                            <col>
+                            <col style="width:150px">
+                            <col>
+                            <col style="width:150px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="first">세부 관리항목</th>
+                            <td colspan="5">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>세부 관리항목 Data label</mat-label>
+                                    <input matInput value="정보교류 차단 관련 체계 구축 및 점검">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">관련 법령</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>관련 법령 Data label</mat-label>
+                                    <input matInput value="은행법 제28조의2, 자본시장법 제44조, 제45조">
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">관련 내규</th>
+                            <td colspan="3">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>관련 법령 Data label</mat-label>
+                                    <input matInput value="내부통제기준 제29조, 금융투자업 겸영은행 이해상충방지 세칙">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">담당 부서장</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>담당 부서장 Data label</mat-label>
+                                    <input matInput value="박상현">
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">관리 담당자</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>관리 담당자 Data label</mat-label>
+                                    <input matInput value="박상현, 조재구">
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">점검 주체</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 주체 Data label</mat-label>
+                                    <input matInput value="Product ICRM">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">점검 대상</th>
+                            <td colspan="5">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 대상 Data label</mat-label>
+                                    <input matInput value="차단대상 정보(미공개중요정보, 금융투자상품매매 또는 소유현황에 대한 정보)">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="mt-10">이행 점검<span class="subTitle">Sub title</span></h3>
+                    <table class="dataTable type2 formTable">
+                        <caption>이행 점검 작성 양식</caption>
+                        <colgroup>
+                            <col style="width:150px">
+                            <col>
+                            <col style="width:150px">
+                            <col>
+                            <col style="width:150px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="first">점검 시기</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 시기 Data label</mat-label>
+                                    <mat-select>
+                                        <mat-option value="option1">연말</mat-option>
+                                        <mat-option value="option2">익월말</mat-option>
+                                        <mat-option value="option3">연말 익월발</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">점검 주기</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 주기 Data label</mat-label>
+                                    <mat-select>
+                                        <mat-option value="option1">분기별</mat-option>
+                                        <mat-option value="option2">전기별</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <th scope="row">점검 담당자</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 담당자 Data label</mat-label>
+                                    <input matInput value="김OO">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">점검 방법</th>
+                            <td colspan="5">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검 방법 Data label</mat-label>
+                                    <input matInput value="정보교류차단 관련 체계 및 내규에 대한 업데이트 여부 및 서베일런스과정에서 발견된 정보교류 차단사항의 위반에 대한 조치여부 점검">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="mt-10">점검 결과 및 증빙자료 첨부<span class="subTitle">Sub title</span></h3>
+                    <table class="dataTable type2 formTable">
+                        <caption>점검 결과 및 증빙자료 첨부 및 작성 양식</caption>
+                        <colgroup>
+                            <col style="width:150px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="first">점검 결과</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>점검결과 Data label</mat-label>
+                                    <input matInput value="">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">증빙자료 첨부</th>
+                            <td>
+                                <div class="form_detail_element opinion_file">
+                                    <div class="customInputFile">
+                                        <app-base-button label="파일첨부" icon="heroicons_solid:presentation-chart-line" styleClass="btnAttachment" size="small" (action)="openFilePicker(0)"></app-base-button>
+                                        <input #fileInput type="file" style="display:none;" (change)="onFileSelected($event, 0)">
+                                        <div class="fileList block" *ngIf="selectedFiles[0]?.length">
+                                            <span class="file_name" *ngFor="let file of selectedFiles[0]">
+                                                <mat-icon svgIcon="mat_solid:file_present"></mat-icon>
+                                                <span>{{ file }}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">평가 결과</th>
+                            <td>
+                                <mat-radio-group [(ngModel)]="checkResult" [ngModelOptions]="{standalone: true}" aria-label="Select an option">
+                                    <mat-radio-button value="1">Pass</mat-radio-button>
+                                    <mat-radio-button value="2">Fail</mat-radio-button>
+                                </mat-radio-group>
+                                <div class="optionField" *ngIf="checkResult === '2'" [@fadeInOut]>
+                                    <div class="optionWrap">
+                                        <h4 class="mb-4">세부 관리항목 및 점검결과</h4>
+                                        <table class="dataTable type2 formTable">
+                                            <caption>세부 관리항목 및 점검결과</caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row" class="first">세부 관리항목</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>세부 관리항목 Data label</mat-label>
+                                                        <input matInput value="정보교류 차단 관련 체계 구축 및 점검">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="first">점검 방법</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>점검 방법 Data label</mat-label>
+                                                        <input matInput value="정보교류 차단 관련 체계 및 내규에 대한 업데이트 여부 및 서베일런스과정에서 발견된 정보교류 차단사항의 위반에 대한 조치여부 점검">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="first">점검 결과</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>점검 결과 Data label</mat-label>
+                                                        <input matInput value="">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4 class="mt-10 mb-4">이슈 및 사후 조치 내용</h4>
+                                        <table class="dataTable type2 formTable">
+                                            <caption>이슈 및 사후 조치 내용</caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row" class="first">이슈 내용</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>이슈 내용 Data label</mat-label>
+                                                        <input matInput value="">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="first">근본 원인</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>근본 원인 Data label</mat-label>
+                                                        <input matInput value="">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="first">사후 조치</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>사후 조치 Data label</mat-label>
+                                                        <input matInput value="*Issu#/iCAP#">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="first">보안 통제</th>
+                                                <td>
+                                                    <mat-form-field appearance="outline">
+                                                        <mat-label>보안 통제 Data label</mat-label>
+                                                        <input matInput value="">
+                                                    </mat-form-field>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="data_list_option padding-0">
+                                            <div class="option_align left">
+                                                <app-base-button label="임시저장" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                                                <app-base-button label="제출" styleClass="btnEdit" icon="heroicons_solid:check"></app-base-button>
+                                            </div>
+                                            <div class="option_align right">
+                                                <app-base-button label="닫기" styleClass="btnDelete" icon="heroicons_solid:x-circle" (action)="closeOptionField()"></app-base-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">제출의견</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>제출 의견 Data label</mat-label>
+                                    <input matInput value="OOO 건으로 보고드립니다.">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">부서장 전결</th>
+                            <td>
+                                <app-base-button label="선택" icon="heroicons_solid:magnifying-glass-plus" styleClass="btnAttachment" size="small"></app-base-button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="mt-10">검토자의견<span class="subTitle">Sub title</span></h3>
+                    <table class="dataTable type2 formTable">
+                        <caption>검토자의견 작성 양식</caption>
+                        <colgroup>
+                            <col style="width:150px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" class="first">부서장</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>부서장 Data label</mat-label>
+                                    <input matInput value="">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first">임원</th>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>책무 세부내용 Data label</mat-label>
+                                    <input matInput value="">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--<mat-form-field appearance="outline">
+                        <mat-label>책무 그룹 Data label</mat-label>
+                        <mat-select>
+                            <mat-option value="option1">2024</mat-option>
+                            <mat-option value="option2">2023</mat-option>
+                            <mat-option value="option3">2022</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>책무 세부내용 Data label</mat-label>
+                        <input matInput value="">
+                    </mat-form-field>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">옵션1 Data label</mat-radio-button>
+                        <mat-radio-button value="2">옵션2 Data label</mat-radio-button>
+                    </mat-radio-group>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                        <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+                    </section>-->
+                </form>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                        <app-base-button label="목록" styleClass="btnList" icon="heroicons_solid:bars-3" tag="a" [routerLink]="['/executive-management']"></app-base-button>
+                        <app-base-button label="임시저장" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                        <app-base-button label="제출" styleClass="btnEdit" icon="heroicons_solid:check"></app-base-button>
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="승인" styleClass="btnEdit" icon="heroicons_solid:check"></app-base-button>
+                        <app-base-button label="반려" styleClass="btnDelete" icon="heroicons_solid:x-circle"></app-base-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

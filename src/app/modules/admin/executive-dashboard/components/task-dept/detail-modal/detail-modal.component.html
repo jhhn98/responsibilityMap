@@ -1,0 +1,82 @@
+<!-- 여기서 버튼의 값을 받아서 데이터를 선택 -->
+<div class="dialog_content" *ngIf="data.dialogName === 'task'">
+    <div class="dialogDataTitle"><strong>임원 직책 정보</strong></div>
+    <table class="dialogDataTable">
+        <caption>임원 직책 정보</caption>
+        <colgroup>
+            <col style="width:200px">
+            <col>
+            <col style="width:200px">
+            <col>
+        </colgroup>
+        <tbody>
+        <tr>
+            <th scope="row" class="first">직책</th>
+            <td colspan="3">리스크관리본부장</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">성명</th>
+            <td>홍길동</td>
+            <th scope="row">직위</th>
+            <td>본부장</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">현직책부여일</th>
+            <td>2022-12-13</td>
+            <th scope="row">임원선</th>
+            <td>2022-12-13</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">겸직여부</th>
+            <td>위험관리 책임자</td>
+            <th scope="row">겸직</th>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">소관부서</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">책무개요</th>
+            <td colspan="3">리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준리스크관리에 관한 내부통제체제의 구축&middot;운영, 내부통제기준</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="dialogDataTitle mt-7"><strong>회의체 정보</strong></div>
+    <div class="dialogDataTitle mt-7"><strong>책무 정보</strong></div>
+    <div class="dialogDataTitle mt-7"><strong>주요 관리 의무</strong></div>
+</div>
+<!-- or -->
+<div class="dialog_content" *ngIf="data.dialogName === 'dept'">
+    <div class="customDialogSearch">
+        <form class="search-form" (ngSubmit)="onSearch()">
+            <div class="search_wrap">
+                <mat-form-field appearance="outline" class="bg-white">
+                    <mat-label>대상 부서</mat-label>
+                    <mat-select [(value)]="selected">
+                        @for (department of departments; track department) {
+                            <mat-option [value]="department.value">{{department.viewValue}}</mat-option>
+                        }
+                    </mat-select>
+                </mat-form-field>
+                <button mat-flat-button color="primary" type="submit" class="dialogFormButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>조회</span></button>
+            </div>
+        </form>
+    </div>
+    <div class="min-w-120">
+        <div class="customTree">
+            <div class="data_legend">
+                <div class="dialogDataTitle"><strong>범례<span class="subTitle">english title</span></strong></div>
+                <div class="treeWrap">
+                    <app-tree [nodeData]="treeData1"></app-tree>
+                </div>
+            </div>
+            <div class="data_tree">
+                <div class="dialogDataTitle"><strong>점검항목 상세내용<span class="subTitle">english title</span></strong></div>
+                <div class="treeWrap">
+                    <app-tree [nodeData]="treeData2"></app-tree>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

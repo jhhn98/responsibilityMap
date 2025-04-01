@@ -1,0 +1,71 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>회의체 정보 관리<span class="subTitle">Meeting Information Management</span></h2>
+        <div class="bg-card w-full overflow-hidden shadow rounded-2xl">
+            <div class="contentWrap">
+                <table class="dataTable type2">
+                    <caption>회의체 정보 관리</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">회의체명</th>
+                        <th scope="col">위원장/위원</th>
+                        <th scope="col">개최주기</th>
+                        <th scope="col">주요 심의&middot;의결사항</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <th scope="row" class="first">경영위원회</th>
+                        <td>위원</td>
+                        <td>매월</td>
+                        <td class="text-left">정관 및 이사회규정에서 정한 이사회의 권한 사항 이외의 사항으로 은행의 경영에 관한 사항을 심의함.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">조정위원회</th>
+                        <td>위원</td>
+                        <td>매월</td>
+                        <td class="text-left">프랜차이즈 및 리스크 관련 사안에 대해 논의 및 의사 결정함</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">비예금상품위원회</th>
+                        <td>위원</td>
+                        <td>분기</td>
+                        <td class="text-left">비예금상품의 기획&middot;선정, 판매 및 사후관리에 관한 전반 사항</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">금융소비자보호<br>내부통제위원회</th>
+                        <td>위원</td>
+                        <td>반기</td>
+                        <td class="text-left">
+                            -금융소비자보호에 관한 경영방향, 주요 제도 변경사항 및 평가<br>
+                            -금융소비자보호 실태평가 현황<br>
+                            -주요민원, 분쟁에 대한 대응 결과<br>
+                            -금융상품의 개발 및 영업 방식에 관한 사항
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">임원회의<br>(Executive<br>Committee)</th>
+                        <td>위원</td>
+                        <td>매월</td>
+                        <td class="text-left">은행의경영실적,영업추진,소비자보호등에관한사항등정보공유하고 협의가 필요한 사항을 논의함</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="data_list_option">
+                    <div class="option_align left">
+                        <app-base-button label="등록" styleClass="btnAdd" icon="heroicons_solid:plus-small"></app-base-button>
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="수정" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                        <app-base-button label="삭제" styleClass="btnDelete" icon="heroicons_solid:x-mark"></app-base-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//todo
+1. 회의체 목록 추가 ppt 27p
+2. 목록에서 열 클릭시 해당 페이지로 이동.
+3. 회의체 등록 폼 모달 생성하여 연결.
+-->

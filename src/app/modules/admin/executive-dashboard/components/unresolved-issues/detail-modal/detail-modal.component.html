@@ -1,0 +1,54 @@
+<div class="dialog_content">
+    <div class="dialogDataTitle"><strong>{{ data.rowData.index }} 상세</strong></div>
+    <table class="dialogDataTable">
+        <caption>{{ data.rowData.index }} 상세</caption>
+        <colgroup>
+            <col style="width:200px">
+            <col>
+            <col style="width:200px">
+            <col>
+        </colgroup>
+        <tbody>
+        <tr>
+            <th scope="row" class="first">관리번호</th>
+            <td>{{ data.rowData.index }}</td>
+            <th scope="row">발생월</th>
+            <td>{{ data.rowData.occurrenceMM }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">담당 부서</th>
+            <td>{{ data.rowData.department }}</td>
+            <th scope="row">등록직원</th>
+            <td>홍길동</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">부적정 항목</th>
+            <td colspan="3">{{ data.rowData.items }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">책무</th>
+            <td colspan="3">위험관리 업무와 관련된 책무</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">책무 상세</th>
+            <td colspan="3">심사 업무 수행에 대해 관리할 책임</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">관리의무</th>
+            <td colspan="3">대고객판해 금융투자상품 등의 제조 판매에 대한 상품 승인 업무 관리</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">부적정 사유</th>
+            <td colspan="3">{{ data.rowData.reason }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">조치 방안</th>
+            <td colspan="3">2025년 8월 중 심의위를 재개최하고 의결 정족수를 확보하여 재승인을 득하도록 진행 예정<br>추후 재발 방지를 위하여 관련 매뉴얼 및 체크리스트 보완을 실시하고 담당직원 교육 실시 예정임</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first">조치 예정일</th>
+            <td colspan="3">{{ data.rowData.actionDate }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

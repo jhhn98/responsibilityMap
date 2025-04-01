@@ -1,0 +1,14 @@
+/node_modules/
+/.angular/
+/.idea/
+/.idea/codeStyles/
+/.idea/inspectionProfiles/
+/.idea/shelf/
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/starter.iml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/dist/
+

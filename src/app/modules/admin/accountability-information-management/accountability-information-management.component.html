@@ -1,0 +1,500 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>책무정보 관리<span class="subTitle">Accountability Information Management</span></h2>
+        <div class="bg-card flex flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="contentWrap">
+                <div class="data_list_option padding-0">
+                    <div class="option_align left"></div>
+                    <div class="option_align right">
+                        <app-base-button label="엑셀 다운로드" icon="heroicons_solid:arrow-down-circle"></app-base-button>
+                    </div>
+                </div>
+                <!--<table class="dataTable type2">
+                    <caption>책무정보관리</caption>
+                    <colgroup>
+                        <col style="width:120px;">
+                        <col style="">
+                        <col style="">
+                        <col style="">
+                        <col style="">
+                        <col style="">
+                        <col style="width:100px;">
+                        <col style="width:100px;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">책무</th>
+                        <th scope="col">책무 세부내용</th>
+                        <th scope="col">주요 관리의무</th>
+                        <th scope="col">세부 관리항목</th>
+                        <th scope="col">관련 법령</th>
+                        <th scope="col">관련 내규</th>
+                        <th scope="col">담당부서장</th>
+                        <th scope="col">관리담당자</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="first text-center" rowspan="22">준법감시업무와 관련된 책무</td>
+                        <td rowspan="4">내부통제체계를 구축 및 운영할 책임</td>
+                        <td>내부통제기준 적정성 관리&middot;감독(Framework 구축/마련)</td>
+                        <td>내부통제기준 적정성 주기적 점검 및 제개정 입안 및 운영</td>
+                        <td class="text-center">지배구조법 제24조</td>
+                        <td>규정관리세칙 제7조(규정의 시행책임)</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">내부통제 지침 및 준수매뉴얼 제정 및 시행</td>
+                        <td>내부통제 지침 및 준수매뉴얼 제정 및 시행</td>
+                        <td>지배구조법 제24조. 지배구조법 시행령 제19조</td>
+                        <td>내부통제기준 제9조 제3항, 제17조 제2항 제3호, 법규 준수 업무 세칙, 준법감시 업무방법서</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>내부고발제도 운용에 대한 내부통제기준 마련(운영에 관해서는 검사부에서 수행함)</td>
+                        <td>지배구조법 제24조, 시행령 제19조, 감독규정 제11조 제2항 제1호</td>
+                        <td>내부통제기준 제37조(내부고발제도), 상부보고세칙</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>준법감시부서 역량제고를 위한 준법감시 직원확보</td>
+                        <td>준법감시직원 역량제고를 위한 준법감시 직원확보 및 전문인력 확보 현황 점검</td>
+                        <td>지배구조법 시행령 제19조 제1항 제3호</td>
+                        <td>내부통제기준 제15조, 제16조, 인사관련 내부통제 방법서 제7조 및 제8조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">김재휘</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="11">관련 법령&middot;내부통제 기준 준수 여부를 관리할 책임</td>
+                        <td rowspan="8">정보교류차단 체계 구축, 금융사고 예방대책 평가 등 관련 법령 및 내부통제기준 준수 여부 관리</td>
+                        <td>정보교류 차단 관련체계 구축 및 점검(정보교류 차단 관련 내규 적정성 및 점검을 의미)</td>
+                        <td class="text-center">은행법 제28조의2, 자본시장법 제44조, 제45조</td>
+                        <td>내부통제기준 제29조, 금융투자업 겸 영은행 이해상층방지 세칙(첨부)</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>조재구</td>
+                    </tr>
+                    <tr>
+                        <td>금융사고 예방 내부통제 사후관리점검</td>
+                        <td class="text-center">은행법 제34조의3</td>
+                        <td>내부통제기준 제28조, 금융사고 예방 내부통제 방법서 제7조 등, 인사관련 내부통제방법서 제6조 등</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">김재휘</td>
+                    </tr>
+                    <tr>
+                        <td>재산상 이익제공 법규 준수여부 점검 및 이사회 보고, 공시</td>
+                        <td class="text-center">은행법 제34조의2 제1항 제3호, 시행령 제20조의2 제3호, 은행앱감독규정 제29조의3, 부정청탁 및 금품 등 수수의 금지에 관한 법률</td>
+                        <td>내부통제기준 제26조의2, 재산상의 이익 제공 방법서, 선물 및 접개 규준, 뇌물방지정책, 금융투자업 겸영은행 이해상충방지 세칙 제8조(재산상 이익의 제공 및 수령 제한)</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">김상욱</td>
+                    </tr>
+                    <tr>
+                        <td>임직원 겸직 기준 마련, 적정성 및 준수여부 점검 및 필요 조치</td>
+                        <td class="text-center">지배구조법 제10조(겸직제한), 제11조(겸직승인 및 보고), 제29조(준법감시인, 위험관리책임자), 시행령 제11조, 제19조 제1항 제12호, 제24조(겸직금지 등), 상법 제397조(경업금지), 자본시장법 제250조(은행에 대한 특칙) 제7항</td>
+                        <td>내부통제기준 제16조 제2항(준법감시인의 독립성 확보), 제24조(임직원의 타 회사 겸직 관련), 임직원 외부 이사직 및 비즈니스 이해관계 정책, 금융사고예방 방법서 제2조, 금융투자업 겸영은행 이해상충 방지 세칙</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>불공정거래행위 모니터링-개인거래 및 투자정책</td>
+                        <td class="text-center">자본시장법 제63조</td>
+                        <td>내부통제기준 제27조, 금융투자업 겸영은행 이해상충방지 세칙 제18조, 개인거래 및 투자정책, 금융투자업 겸영은행 이해상충 방지 세칙 제18조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>불공정거래행위 모니터링-광고표시 심의(허위, 과장 금지)</td>
+                        <td class="text-center">금융소비자보호법 제22조</td>
+                        <td>금융상품 광고 및 공시자료 등 작성&middot;운영 방법서 제5조, 제6조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">김영삼</td>
+                    </tr>
+                    <tr>
+                        <td>업무위수탁 점검(준법감시인 사전 검토)(사후 반기보고 업무는 TPMRC회의에서 수행함</td>
+                        <td class="text-center">지배구조감독규정 별표 2 9. 금융기관의 업무위탁 등에 관한 규정 제4조</td>
+                        <td>업무위수탁 절차 및 운영 방법서</td>
+                        <td class="text-center">준법감시부</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>정보처리위탁기준 마련</td>
+                        <td class="text-center">정보처리위탁규정</td>
+                        <td>업무위수탁 절차 및 운영 방법서</td>
+                        <td class="text-center">준법감시부</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>내부통제기준 위반사항에 대한 필요 조치</td>
+                        <td>법령과 내부통제기준 등의 준수 여부를 점검하고 위반사항 및 미흡한 사항에 대한 시정&middot;개선에 필요한 조치 및 이사회/감사위원회 보고</td>
+                        <td class="text-center">지배구조법 제30조의2 제4호, 시행령 제25조의2 제3항 제3호</td>
+                        <td>내부통제기준 제9조 제1항, 제14조 제3호 및 4호, 제18조 제3항</td>
+                        <td class="text-center">준법감시부</td>
+                        <td class="text-center">박상현, 김영삼, 강상욱</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">임직원 내부통제 교육프로그램을 운영&middot;관리</td>
+                        <td>임직원교육</td>
+                        <td class="text-center">지배구조법시행령 제25조의2 제3항 제2호, 자본시장법 제45조 제4항 제2호, 금융회사 지배구조 감독규정[별표 2] 제8호</td>
+                        <td>내부통제기준 제17조 제2항 제5호, 제20조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>준법감시 담당 임직원교육</td>
+                        <td class="text-center">지배구조법시행령 제25조의2 제3항 제2호, 자본시장법 제45조 제4항 제2호, 금융회사 지배구조 감독규정[별표 2] 제8호</td>
+                        <td>내부통제기준 제17조 제2항 제5호, 제20조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">윤리경영 실현을 위한 제도 및 프로그램을 운영&middot;관리할 책임</td>
+                        <td rowspan="2">윤리경영 실현을 위한 윤리강령의 구축, 운영 및 준수여부 관리</td>
+                        <td>임직원 윤리강령 제개정 및 운영</td>
+                        <td class="text-center">지배구조법 제22조의2 제1항 2호</td>
+                        <td>내부통제기준 제17조 제2항 제4호, 제36조 제1항, 윤리강령</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>임직원 윤리강령 준수 여부 점검</td>
+                        <td class="text-center">지배구조법 제22조의2 제1항 2호</td>
+                        <td>내부통제기준 제23조 1항, 제36조 제1항</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">준법감시업무를 수행할 책임</td>
+                        <td rowspan="5">법규 및 관련 내규 준수여부 사전 검토</td>
+                        <td>규정 등 내부규정 검토</td>
+                        <td class="text-center">지배구조법 시행령 제19조 제1항 제3호</td>
+                        <td>내부통제기준 제19조 제1항 제1호</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>이사회 및 이사회내 부속위원회(감사위원회 제외) 부의사항 적법성 검토</td>
+                        <td class="text-center">지배구조법 시행령 제19조 제1항 제3호</td>
+                        <td>내부통제기준 제19조 제1항 제2호</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>고난도 금융투자 신상품 개발 법규준수 검토</td>
+                        <td class="text-center">지배구조법 시행령 제19조 제1항 제3호, 지배구조법 시행령 제11조 2항 제4호</td>
+                        <td>내부통제기준 제19조 제1항 제3호, 고난도 금융투자상품 제조 및 판매에 관한 영업행위 준칙 제9조 제2항, 제10조 제1항(제조회사), 제17조 제2항, 제18조 제1항 (판매회사)</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">조재구</td>
+                    </tr>
+                    <tr>
+                        <td>감독당국에 제출하는 중요한 자료나 문서(회계나 재무 관련 보고서 제외)에 대한 사전검토</td>
+                        <td class="text-center">지배구조법 시행령 제19조 제1항 제3호 은행법 제27조의2(부수업무의 운영), 제28조(겸영업무의 운영), 자본시장법 제16조 (업무의 추가 및 인가의 변경, 은행법 제52조(약관), 자본시장법 제56조 (약관), 은행법 제47조(정관변경 등의 보고),  자본시장법 제418조(보고사항) 제6호 내지 제9호</td>
+                        <td>내부통제기준 제19조 제1항 제4호, 법규준수 업무 세칙 제8조 제7호, 금융상품 광고 및 공시자료 등 작성 운영방법서</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td>이해상충 방지를 위한 정보교류차단 관리</td>
+                        <td class="text-center">은행법 제28조의2, 은행법 시행령 제18조의3</td>
+                        <td>내부통제기준 제29조, 금융투자업 겸영은행 이해상충방지 세직 제8조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">박상현<br>조재구</td>
+                    </tr>
+                    <tr>
+                        <td class="first text-center" rowspan="9">자금세탁방지 업무와 관련된 책무</td>
+                        <td rowspan="9">자금세탁방지 관련 내부통제를 수행할 책임</td>
+                        <td rowspan="9">자금세탁방지 관련 내부통제 정책의 설계&middot;운영 및 평가</td>
+                        <td>자금세탁방지 관련 내규 및 세부 업무지침의 작성 및 운용</td>
+                        <td class="text-center">자금세탁방지 및 공중협박자금조달금지에 관한 업무 규정 제5조, 제6조 제3항, 제4항 제1호</td>
+                        <td>자금세탁방지 규정 제4조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">장창우<br>허용준<br>장준성</td>
+                    </tr>
+                    <tr>
+                        <td>공중협박자금 및 대량살상무기확산자금 조달금지 관련 내규 및 세부 업무지침의 작성 및 운용</td>
+                        <td class="text-center">자금세탁방지 및 공중협박자금조달금지에 관한 업무 규정 제5조, 제6조 제3항, 제4항 제1호</td>
+                        <td>금융제재 업무 방법서</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">김록태</td>
+                    </tr>
+                    <tr>
+                        <td>고객확인 이행 감독</td>
+                        <td class="text-center">자금세탁방지 및 공중협박자금조달금지에 관한 업무 규정 제6조 제2항</td>
+                        <td>자금세탁방지 규정 제5조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">허용준<br>이주현<br>안태준</td>
+                    </tr>
+                    <tr>
+                        <td>신상품의 개발 등에 따른 자금 세탁행위 리스크 검토</td>
+                        <td class="text-center">자금세탁방지 업무 규정 제6조 제4항 제3호, 제17조</td>
+                        <td>자금세탁방지 규정 제5.6.1조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">허용준</td>
+                    </tr>
+                    <tr>
+                        <td>직원알기제도의 운영</td>
+                        <td class="text-center">자금세탁방지 업무 규정 제6조 제4항 제4호, 제10조, 제11조 제1항 제2항</td>
+                        <td>자금세탁방지 규정 제9조 AML(CIF없는 직원)</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">장창우</td>
+                    </tr>
+                    <tr>
+                        <td>자금세탁방지 등 자료 보존</td>
+                        <td class="text-center">자금세탁방지 업무 규정 제6조 제4항 제6호</td>
+                        <td>자금세탁방지 규정 제10조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">장창우</td>
+                    </tr>
+                    <tr>
+                        <td>임직원에 대한 연수 실시 및 기록 보존</td>
+                        <td class="text-center">자금세탁방지 업무 규정 제6조 제4항 제5호, 제7조, 제8조, 제9호</td>
+                        <td>자금세탁방지 규정 제8조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">장창우</td>
+                    </tr>
+                    <tr>
+                        <td>자금세탁방지 등 운영상황 모니터링 개선 및 보고</td>
+                        <td class="text-center">자금세탁방지 업무 규정 제6조 제4항 제7호, 제8호</td>
+                        <td>자금세탁방지 규정 제7조, 제8조</td>
+                        <td class="text-center">노은옥</td>
+                        <td class="text-center">장창우</td>
+                    </tr>
+                    <tr>
+                        <td>고액현금거래보고, 고객거래 모니터링 및 의심거래보고 이행</td>
+                        <td class="text-center">자금세탁방지 및 공중협박자금조달금지에 관한 업무 규정 제6조 제1항</td>
+                        <td>자금세탁방지 규정 제7조</td>
+                        <td class="text-center">노은옥<br>권석현</td>
+                        <td class="text-center">김하경<br>장준성</td>
+                    </tr>
+                    <tr>
+                        <td class="first text-center" rowspan="9">개인정보 및 신용정보 보호업무와 관련된 책무</td>
+                        <td rowspan="9">신용정보법상 신용정보 및 개인정보보호법상 개인정보의 관리 및 보호업무를 수행할 책임</td>
+                        <td>개인(신용)정보 보호계획 및 시행</td>
+                        <td>내부관리규정 마련 및 시행</td>
+                        <td class="text-center">신용정보법 제20조 제4항, 제1호, 신용정보업감독규정 제22조 제2항, 개인정보보호법 제31조</td>
+                        <td>개인신용정보 관리보호방법서 제13조, 개인정보보호방법서 제28조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td>개인(신용)정보 처리 실태 및 관행의 정기적인 조사 및 개선</td>
+                        <td>개인 신용정보의 관리 및 보호실태를 정기적으로 점검하고 그 결과를 대표자/이사회에 보고 및 금보원에 제출</td>
+                        <td class="text-center">신용정보법 제20조 제6항, 개인정보의 안전성 확보조치 기준 제4조 제4항</td>
+                        <td>개인신용정보 관리보호방법서 제13조, 개인정보보호방법서 제28조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">개인(신용)정보 처리와 관련한 불만의 처리 및 피해구제</td>
+                        <td>신용정보주체의 권리행사 보장절차 적정성 점검</td>
+                        <td class="text-center">신용정보법 제35조 내지 제39조의3</td>
+                        <td>개인신용정보 관리보호방법서 제15조 내지 제18조의2</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td>개인(신용)정보처리와 관련한 불만 처리 및 피해구제 현황을 보고</td>
+                        <td class="text-center">신용정보법 제43조의3, 개인정보보호법 제39조7</td>
+                        <td>개인신용정보 관리보호방법서 제25조, 제28조, 개인정보보호방법서 36조, 제48조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">개인(신용)정보 유출 및 오용&middot;남용 방지를 위한 내부통제 시스템의 구축</td>
+                        <td>관리적 보안대책 수립&middot;시행</td>
+                        <td class="text-center">신용정보법 제19조 제1항, 시행령 제16조 제1항, 신용정보업감독규정 제20조 및 별표3</td>
+                        <td>개인신용정보 관리보호방법서 제13조의3</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td>개인신용정보 처리시 접속기록 및 이상행위를 정기적으로 확인 및 감독</td>
+                        <td class="text-center">신용정보법 제19조 제1항</td>
+                        <td>개인신용정보 관리보호방법서 제21조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td>개인(신용)정보 보호교육 계획수립 및 시행</td>
+                        <td>임직원들에게 연 1회 이상 개인(신용)정보보호 교육 실시</td>
+                        <td class="text-center">신용정보법 제20조, 개인정보보호법 제28조</td>
+                        <td>개인정보보호방법서 제34조, 개인신용정보 관리보호방법서 제13조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">임직원 등의 개인(신용)정보보호 관련 법령 및 규정 준수 여부 관리 감독</td>
+                        <td>개인(신용)정보의 처리 (수집&middot;이용&middot;제공&middot;위탁)시 관련 규정 준수여부 점검</td>
+                        <td class="text-center">신용정보법 제15조, 제17조, 제32조,제 33조 , 제34조의2, 제34조의3, 개인정보 보호법 제15조, 제17조, 제18조, 제19조, 제28조의8</td>
+                        <td>개인신용정보관리보호방법서 제5조, 제6조, 제7조, 제8조, 제9조, 제10조, 제10조의2, 제10조의3, 개인정보보호방법서 제4조, 제5조, 제6조, 26조의 7</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td>상거래관계가 종료된 개인(신용)정보에 대한 삭제 또는 분리 보관 이행 여부 점검</td>
+                        <td class="text-center">신용정보법 제20조의2, 개인정보보호법 제21조</td>
+                        <td>개인정보보호방법서 제9조, 제10조, 개인신용정보관리보호방법서 제11조</td>
+                        <td class="text-center">박상현</td>
+                        <td class="text-center">유원준</td>
+                    </tr>
+                    <tr>
+                        <td class="first text-center" rowspan="9">소관 조직의 내부통제 등 관리조치 업무와 관련된 책무</td>
+                        <td rowspan="9">소관 업무 관련 내부통제 등의 집행 및 운영에 관한 책임</td>
+                        <td rowspan="2">임원의 책무와 관련된 내부통제기준 및 위험관리기준(&quot;소관내규&quot;)의 마련, 집행&middot;운영 및 준수의 적정성 점검</td>
+                        <td>법령 변경 등 확인하여 소관 내규(규정관리시스템내 소관 부서 기준)의 제정, 개정 필요성 점검</td>
+                        <td class="text-center">지배구조법 제30조의2 제1항 제1호</td>
+                        <td>규정관리세칙, 준법감시 업무방법서, MCA Starndard, MCA Procedure</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>책무구조도 임원 매뉴얼 개정사항 점검</td>
+                        <td class="text-center">지배구조법 제30조의2 제1항 제1호</td>
+                        <td>책무구조도 임원 매뉴얼</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>법령 또는 소관 내규의 위반 또는 미흡 사항에 대한 적정한 시정&middot;개선 등 필요 조치</td>
+                        <td>법령과 내부통제기준등의 준수 여부를 점검하고 위반사항 및 미흡한 사항에 대한 시정&middot;개선에 필요한 조치 및 이사회/감사위원회 보고</td>
+                        <td class="text-center">지배구조법 제30조의2 제4호, 시행령 제25조의2 제3항 제3호</td>
+                        <td>내부통제기준 제9조 제1항, 제14조 제3호 및 4호, 제18조 제3항</td>
+                        <td class="text-center">준법감시부</td>
+                        <td class="text-center">박상현<br>김영삼<br>강상욱</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">법령 또는 소관 내규를 준수하도록 하기 위한 교육&middot;훈련 등의 지원</td>
+                        <td>소관 부서에 적용되는 관련 내규를 준수하도록 독려 및 지원사항 점검<br>- 관련 내규는 소관 내규, 및 소관 내규는 아니나 소관 부서 업무에 적용되는 내규를 포함하도록 함</td>
+                        <td class="text-center">지배구조법 시행령 제25조의2 제3항 제2호</td>
+                        <td>내부통제기준</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>전행적 교육 프로그램에 관한 독려 및 지원<br>예)준법감시본부, 인사본주, 감사본부, 금융소비자보호본부, 정보보안본부 등</td>
+                        <td class="text-center">지배구조법 시행령 제25조의2 제3항 제2호, 실명법 4조, 자시법 174조, 자시법 54조, 은행법 21조의2</td>
+                        <td>내부통제기준</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>대표이사에 대한 정기 및 수시 보고 이행</td>
+                        <td>임원의 내부통제 점검활동에 대한 분기별 정기보고</td>
+                        <td class="text-center">지배구조법 제30조의2 제2항 제1호</td>
+                        <td>책무구조도 임원 매뉴얼</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">소관 업무에 관한 감독당국 보고 또는 공시 의무 관리&middot;감독</td>
+                        <td>소관부서의 공시 또는 기관에 대한 보고내용의 적정성 검토<br>-소관부서가 취합하여 공시/감독기관에 보고하는 경우, 해당 자료를 제출한 부서에서는 자료의 적정성을 검토하도록 함</td>
+                        <td class="text-center" rowspan="2">은행법, 자본시장법, 지배구조법</td>
+                        <td rowspan="2">국내공시세칙</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>소관부서의 공시/감독기관 보고의무 이행<br>예) 공시의 종류:경영관련공시, 발행관련공시, 상품관련공시, 기타공시 등</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    <tr>
+                        <td>소관업무에 관련된 기록의 보관 및 관리</td>
+                        <td>소관부서 관리 문서의 기록유지, 보관, 폐기에 대한 점검</td>
+                        <td class="text-center">자본시장법 제60조, 상법 33조</td>
+                        <td>기록관리규정</td>
+                        <td class="text-center">소관 부서장</td>
+                        <td class="text-center">소관부서 BUCO</td>
+                    </tr>
+                    </tbody>
+                </table>-->
+                <form>
+                    <table class="dataTable type2">
+                        <caption>책무정보 관리</caption>
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:50px">
+                            <col style="width:70px">
+                            <col style="width:70px">
+                            <col style="width:100px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col>
+                            <col>
+                            <col style="width:80px">
+                            <col style="width:80px">
+                            <col style="width:80px">
+                            <col style="width:50px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="first">
+                                <section class="example-section padding-0">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </section>
+                            </th>
+                            <th scope="col">No</th>
+                            <th scope="col">기준년도</th>
+                            <th scope="col">기준회차</th>
+                            <th scope="col">책무구분</th>
+                            <th scope="col">책무</th>
+                            <th scope="col">책무세부<br>내용</th>
+                            <th scope="col">주요관리<br>의무</th>
+                            <th scope="col">세부관리<br>항목</th>
+                            <th scope="col">관련법령</th>
+                            <th scope="col">관련내규</th>
+                            <th scope="col">승인진행<br>상태</th>
+                            <th scope="col">승인완료<br>일자</th>
+                            <th scope="col">최초등록<br>일자</th>
+                            <th scope="col">사용<br>여부</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="first text-center">
+                                <section class="example-section padding-0">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </section>
+                            </td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">2024</td>
+                            <td class="text-center">1회차</td>
+                            <td>지정 책임자 관련 책무<br>금융엽업 관련 책무<br>경영관리 관련 책무</td>
+                            <td>소관 조직의 내부통제 등 관리조치 업무와 관련된 책무</td>
+                            <td>신용정보법상 신용정보 및 개인정보보호법상 개인정보의 관리 및 보호업무를 수행할 책임</td>
+                            <td>임원의 책무와 관련된 내부통제기준 및 위험관리기준(&quot;소관 내규&quot;)의 마련, 집행&middot;운영 및 준수의 적정성 점검</td>
+                            <td>소관부서의 공시 또는 기관에 대한 보고내용의 적정성 검토<br>-소관부서가 취합하여 공시/감독기관에 보고하는 경우, 해당 자료를 제출한 부서에서는 자료의 적정성을 검토하도록 함</td>
+                            <td>지배구조법 시행령 제19조 제1항 제3호, 은행법 제27조의2(부수업무의 운영), 제28조(겸영업무의 운영), 자본시장법 제16조(업무의 추가 및 인가의 변경, 은행법 제52조(약관), 자본시장법 제56조(약관), 은행법 제47조(정관변경 등의 보고), 자본시장법 제418조(보고사항) 제6호 내지 제9호<div class="text-right mt-2"><app-base-button label="상세보기" size="small" icon="heroicons_solid:magnifying-glass" (action)="openDialog('law01', 'laws')"></app-base-button></div></td>
+                            <td>내부통제기준 제19조 제1항 제3호, 고난도 금융투자상품 제조 및 판매에 관한 영업행위준칙 제9조 제2항, 제10조 제1항(제조회사), 제17조 제2항, 제18조 제1항(판매회사)<div class="text-right mt-2"><app-base-button label="상세보기" size="small" icon="heroicons_solid:magnifying-glass" (action)="openDialog('rgl01','regulations')"></app-base-button></div>
+                            </td>
+                            <td class="text-center">진행중</td>
+                            <td class="text-center">24.12.12</td>
+                            <td class="text-center">24.12.25</td>
+                            <td class="text-center">Y</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="data_list_option padding-0">
+                        <div class="option_align left">
+                            <app-base-button label="등록" styleClass="btnAdd" icon="heroicons_solid:plus-small"></app-base-button>
+                            <app-base-button label="수정" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                            <app-base-button label="삭제" styleClass="btnDelete" icon="heroicons_solid:x-mark"></app-base-button>
+                        </div>
+                        <div class="option_align right">
+                            <app-base-button label="승인요청" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                            <app-base-button label="승인" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                            <app-base-button label="반려" styleClass="btnCancel" icon="heroicons_solid:x-circle"></app-base-button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //todo
+1. 목록 추가 갯수
+2. 상세보기 시 데이터 수정할 수 있도록 form 양식으로 변경.
+-->

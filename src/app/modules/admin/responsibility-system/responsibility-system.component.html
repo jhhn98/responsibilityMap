@@ -1,0 +1,217 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col">
+        <h2 class="mt-8 titleBlock">책무체계도 조회<span class="subTitle">View Responsibility System</span></h2>
+        <app-data-search *ngIf="default" [type]="'default'"></app-data-search>
+        <div class="bg-card w-full overflow-hidden shadow rounded-2xl mt-10">
+            <div class="contentWrap">
+                <div class="data_list_option padding-0">
+                    <div class="option_align left"><!--전체 <span class="data_count">0</span>건--></div>
+                    <div class="option_align right">
+                        <app-base-button label="엑셀 다운로드" icon="heroicons_solid:arrow-down-circle"></app-base-button>
+                    </div>
+                </div>
+                <form>
+                    <table class="dataTable type2">
+                        <caption>책무 리스트</caption>
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:80px">
+                            <col style="width:80px">
+                            <col>
+                            <col style="width:120px">
+                            <col style="width:100px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:170px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="first">No.</th>
+                            <th scope="col">기준년도</th>
+                            <th scope="col">기준회차</th>
+                            <th scope="col">기준변경사유</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">등록자</th>
+                            <th scope="col">PPT 다운로드</th>
+                            <th scope="col">인쇄</th>
+                            <th scope="col">관리</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr *ngFor="let accountabilityList of accountabilityListSet; let i = index">
+                            <td class="first">{{ accountabilityList.columnNo }}</td>
+                            <td>{{ accountabilityList.dataYear }}</td>
+                            <td>{{ accountabilityList.dataRound }}</td>
+                            <td class="text-left">{{ accountabilityList.changeReason }}</td>
+                            <td>{{ accountabilityList.regDate }}</td>
+                            <td>{{ accountabilityList.regAuthor }}</td>
+                            <td><app-base-button label="다운로드" size="small" icon="heroicons_solid:arrow-down-circle" (action)="downloadPPT(accountabilityList.filePPT)"></app-base-button></td>
+                            <td><app-base-button label="출력하기" size="small" icon="heroicons_solid:printer" (action)="print(accountabilityList.filePrint)"></app-base-button></td>
+                            <td>
+                                <app-base-button label="수정" size="small" styleClass="btnEdit" icon="heroicons_solid:pencil-square" (action)="editListData()"></app-base-button>
+                                <app-base-button label="삭제" size="small" styleClass="btnDelete" icon="heroicons_solid:x-mark" (action)="deleteListData()"></app-base-button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="newItem">
+                            <td class="first"></td>
+                            <td>
+                                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                                    <mat-label>기준연도</mat-label>
+                                    <mat-select [(value)]="newItem.year">
+                                        <mat-option *ngFor="let y of yearOptions" [value]="y">{{ y }}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                                    <mat-label>기준회차</mat-label>
+                                    <mat-select [(value)]="newItem.round">
+                                        <mat-option *ngFor="let r of roundOptions" [value]="r">{{ r }}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <td class="text-left">
+                                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-full">
+                                    <mat-label>변경사유</mat-label>
+                                    <input matInput [(ngModel)]="newItem.changeReason" name="변경사유" />
+                                </mat-form-field>
+                            </td>
+                            <td>{{ newItem.regDate }}</td>
+                            <td>{{ newItem.registrant }}</td>
+                            <td>
+                                <!--<app-base-button label="다운로드" icon="heroicons_solid:arrow-down-circle" styleClass="btnDownload" size="small" (action)="downloadPPT(newItem.filePPT)"></app-base-button>-->
+                                <div class="form_detail_element opinion_file">
+                                    <div class="customInputFile">
+                                        <app-base-button label="파일첨부" icon="heroicons_solid:presentation-chart-line" styleClass="btnAttachment" size="small" (action)="openFilePicker(0)"></app-base-button>
+                                        <input #fileInput type="file" style="display:none;" (change)="onFileSelected($event, 0)">
+                                        <div class="fileList block" *ngIf="selectedFiles[0]?.length">
+                                            <span class="file_name" *ngFor="let file of selectedFiles[0]">
+                                                <mat-icon svgIcon="mat_solid:file_present"></mat-icon>
+                                                <span>{{ file }}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <app-base-button label="출력하기" icon="heroicons_solid:printer" styleClass="btnPrint" size="small" (action)="printItem(newItem)"></app-base-button>
+                            </td>
+                            <td>
+                                <app-base-button label="저장" size="small" styleClass="btnAdd" icon="heroicons_solid:check-circle" (action)="saveListData(newItem)"></app-base-button>
+                                <app-base-button label="취소" size="small" styleClass="btnCancel" icon="heroicons_solid:x-mark" (action)="cancelListData()"></app-base-button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="data_list_option">
+                <div class="option_align left">
+                    <app-base-button label="등록" styleClass="btnAdd" icon="heroicons_solid:plus-small" (action)="registerListData()"></app-base-button>
+                </div>
+                <div class="option_align right">
+                    <app-base-button label="승인요청" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                    <app-base-button label="승인" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                    <app-base-button label="반려" styleClass="btnCancel" icon="heroicons_solid:x-circle"></app-base-button>
+                </div>
+            </div>
+        </div>
+        <div class="grid w-full grid-cols-1 gap-8 xl:grid-cols-3 mt-10">
+            <div class="bg-card shadow rounded-2xl xl:col-span-2 p-4">
+                <h3 class="mb-5">책무체계도<span class="subTitle">Accountability System</span></h3>
+                <div class="systemDiagramWrap">
+                    <div class="systemDiagram">
+                        <div class="diagramLegend">
+                            <div class="legendElement ra">
+                                <span>RA#</span>
+                                <em>지정 책임자 관련 책무</em>
+                            </div>
+                            <div class="legendElement rb">
+                                <span>RB#</span>
+                                <em>금융영업 관련 업무</em>
+                            </div>
+                            <div class="legendElement rc">
+                                <span>RC#</span>
+                                <em>경영관리 관련 책무</em>
+                            </div>
+                        </div>
+                        <div class="upperDepart" *ngIf="bank.length > 0">
+                            <div class="empCard">
+                                <span class="name">{{ bank[0]?.bankManager.name }}</span>
+                                <span class="position">{{ bank[0]?.bankManager.position }}</span>
+                                <span class="appoDate">{{ bank[0]?.bankManager.date }}</span>
+                                <div class="responGroup">
+                                    <div class="legendElement" *ngFor="let legend of managerLegends" [ngClass]="{'ra': legend.startsWith('RA'), 'rb': legend.startsWith('RB'), 'rc': legend.startsWith('RC')}"><span>{{ legend }}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lowerDepart">
+                            <ul *ngFor="let department of departments" [class]="department.departmentName">
+                                <li *ngFor="let staff of department.staff">
+                                    <div class="empCard">
+                                        <span class="name">{{ staff.name }}</span>
+                                        <span class="position">{{ staff.position }}</span>
+                                        <span class="appoDate">{{ staff.date }}</span>
+                                        <div class="responGroup">
+                                            <div *ngFor="let legend of staff.legend.split(',')" class="legendElement {{ removeNumbers(legend).toLowerCase() }}"><span>{{ legend }}</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-card shadow rounded-2xl p-4">
+                <h3>책무범례<span class="subTitle">(지배구조법 시행령 상 규정된 책무 및 조직, 업무특성 반영)</span></h3>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                        <app-base-button label="등록" styleClass="btnAdd" icon="heroicons_solid:plus-small" (action)="openDialog('legendAddForm')"></app-base-button>
+                    </div>
+                    <div class="option_align right">
+                    </div>
+                </div>
+                <table class="dataTable">
+                    <caption>책무범례</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:76px;">
+                        <col style="width:86px;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">책무 목록</th>
+                        <th scope="col">책무 코드</th>
+                        <th scope="col">관리</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <ng-container *ngFor="let group of legendGroups[0]?.legendGroup">
+                        <tr>
+                            <th scope="row" class="first thSummary" colspan="3">{{ group.groupTitle }}</th>
+                        </tr>
+                        <tr *ngFor="let legend of group.legends">
+                            <td>{{ legend.content }}</td>
+                            <td class="text-center">
+                                <div class="legendElement {{ group.groupKey }}">
+                                    <span>{{ legend.code }}</span>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <app-base-button label="수정" size="small" styleClass="btnEdit" icon="heroicons_solid:pencil-square" (action)="openDialog('legendEditForm', legend, group.groupTitle)"></app-base-button>
+                            </td>
+                        </tr>
+                    </ng-container>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //todo
+완료 - 1.책무체계 목록 데이터 생성하여 작업.
+완료 - 2.맨 앞의 체크박스 없애기
+완료 - 3.등록버튼 클릭시 모달 생성.
+완료 - 4.테이블내의 수정버튼 클릭시 고유값과 해당 tr의 데이터를 가지고 모달 생성.
+완료 - 5.책무범례 수정버튼 제거. 목록내에 수정버튼을 배치하여 클릭할 경우 수정 모달 생성.
+-->

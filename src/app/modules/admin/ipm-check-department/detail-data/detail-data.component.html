@@ -1,0 +1,144 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2 class="mt-10">부서별 이행점검<span class="subTitle">English title</span></h2>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full">
+            <div class="dataDetail">
+                <h3>관련책무<span class="subTitle">English title</span></h3>
+                <table class="dataTable">
+                    <caption>관련책무 상세</caption>
+                    <colgroup>
+                        <col style="width:15%">
+                        <col style="width:35%">
+                        <col style="width:15%">
+                        <col style="width:35%">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="first">책무</th>
+                        <td>신탁업무와 관련된 책무</td>
+                        <th scope="row">책무구분</th>
+                        <td>금융영업</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">책무세부</th>
+                        <td>신탁 제도&middot;정책의 수립&middot;추진 업무에 대한 책임</td>
+                        <th scope="row">관리의무</th>
+                        <td>신탁사업 관련 정책 수립에 대한 관리 및 점검</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>점검항목<span class="subTitle">English title</span></h3>
+                <table class="dataTable">
+                    <caption>점검항목 상세</caption>
+                    <colgroup>
+                        <col style="width:15%">
+                        <col style="width:18%">
+                        <col style="width:15%">
+                        <col style="width:18%">
+                        <col style="width:15%">
+                        <col style="width:19%">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="first">점검부서</th>
+                        <td>구조화신탁부</td>
+                        <th scope="row">점검주기</th>
+                        <td>매월</td>
+                        <th scope="row">점검년월</th>
+                        <td>2024-12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">점검항목</th>
+                        <td colspan="3">영업계획 수립에 대한 관리 및 점검</td>
+                        <th scope="row">점검자</th>
+                        <td>김담당</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">점검방법</th>
+                        <td colspan="5">
+                            수립된 사업 및 영업계획 확인<br>
+                            - ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ<br>
+                            - ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="first">증빙자료</th>
+                        <td colspan="5">사업계획 보고서 첨부</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="form_wrap opinion_wrap">
+                    <div class="form_group">
+                        <div class="form_text">
+                            <div class="text_element">
+                                <strong>점검대상 관리조치사항이 적절히 수행되었습니까?</strong>
+                            </div>
+                            <div class="text_element">
+                                <mat-radio-button value="1">적정</mat-radio-button>
+                                <mat-radio-button value="2">부적정</mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="form_element">
+                            <div class="form_detail_element opinion_textarea">
+                                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full h-full bg-white">
+                                    <mat-label>점검결과를 요약</mat-label>
+                                    <textarea matInput placeholder="점검결과를 요약하여 기술하십시오."></textarea>
+                                </mat-form-field>
+                            </div>
+                            <div class="form_detail_element opinion_file">
+                                <div class="customInputFile">
+                                    <button mat-flat-button class="file_button" (click)="openFilePicker(0)">증빙자료 파일첨부</button>
+                                    <input #fileInput type="file" style="display:none;" (change)="onFileSelected($event, 0)">
+                                    <div class="fileList block" *ngIf="selectedFiles[0]?.length">
+                                        <span class="file_name" *ngFor="let file of selectedFiles[0]">
+                                            <mat-icon svgIcon="mat_solid:file_present"></mat-icon>
+                                            <span>{{ file }}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="form_text">
+                            <div class="text_element">
+                                <strong>점검대상 관리조치사항 관련 미흡사항을 입력하십시요.(부적정 사유)</strong>
+                            </div>
+                            <div class="text_element">
+                                <mat-radio-button value="1">적정</mat-radio-button>
+                                <mat-radio-button value="2">부적정</mat-radio-button>
+                            </div>
+                        </div>
+                        <div class="form_element">
+                            <div class="form_detail_element opinion_textarea">
+                                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full h-full bg-white">
+                                    <mat-label>미흡사항, 발생원인 및 대응방안</mat-label>
+                                    <textarea matInput placeholder="미흡사항, 발생원인 및 대응방안을 기술하십시오."></textarea>
+                                </mat-form-field>
+                            </div>
+                            <div class="form_detail_element opinion_file">
+                                <div class="customInputFile">
+                                    <button mat-flat-button class="file_button" (click)="openFilePicker(1)">증빙자료 파일첨부</button>
+                                    <input #fileInput type="file" style="display:none;" (change)="onFileSelected($event, 1)">
+                                    <div class="fileList block" *ngIf="selectedFiles[1]?.length">
+                                <span class="file_name" *ngFor="let file of selectedFiles[1]">
+                                    <mat-icon svgIcon="mat_solid:file_present"></mat-icon>
+                                    <span>{{ file }}</span>
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_button_group">
+                        <div class="btn_group left">
+                        </div>
+                        <div class="btn_group right">
+                            <button mat-flat-button type="submit" class="btn_save"><span>저장</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

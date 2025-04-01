@@ -1,0 +1,42 @@
+<div class="position-information" #content>
+    <form>
+        <table class="dataTable type2 copyTableForm">
+            <caption>책무개요</caption>
+            <colgroup>
+                <col>
+                <col style="width:240px;">
+            </colgroup>
+            <thead>
+            <tr class="borderTop">
+                <th scope="col" class="first">책무 개요 1)</th>
+                <th scope="col">책무 배분일자 2)</th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            <tr>
+                <td class="first text-left">
+                    <mat-form-field appearance="outline" class="w-full">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel...">준법감시, 자금세탁방지, 개인정보 및 신용정보 보호업무와 관련된 내부통제 및 위험관리(&quot;내부통제등&quot;)의 집행 및 운영에 대한 책임</textarea>
+                    </mat-form-field>
+                </td>
+                <td style="vertical-align:top;">
+                    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field w-40" title="검색 시작 날짜">
+                        <mat-label>조회 시작 날짜</mat-label>
+                        <!-- #docregion toggle -->
+                        <input matInput [matDatepicker]="picker1" value="2024-12-11">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                        <!-- #enddocregion toggle -->
+                    </mat-form-field>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <div><br>
+주&nbsp;1)&nbsp;영 &lt;별표 1&gt; 제2호의 경우 고객, 금융상품, 판매채널, 담당지역 등의 구분기준에 따른 개요를 기재하고,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;영 &lt;별표 1&gt; 제1&middot;3호의 경우 책무의 내용을 요약하여 기재<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;임원의 직책 변경, 책무의 추가&middot;변경 등에 따른 현 책무의 배분일자 기재
+    </div>
+</div>

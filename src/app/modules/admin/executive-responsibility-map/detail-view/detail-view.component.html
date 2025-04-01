@@ -1,0 +1,89 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col">
+        <h2>은행 책무기술서 관리<span class="subTitle">Accountability Management Standards</span></h2>
+        <div class="bg-card w-full overflow-hidden shadow rounded-2xl">
+            <div class="flex flex-auto flex-col w-full">
+                <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full sm:p-5">
+                    <h3>임원 및 직책정보</h3>
+                    <table class="dataTable type2">
+                        <caption>임원 및 직책 정보</caption>
+                        <colgroup>
+                            <col style="width:180px">
+                            <col>
+                            <col style="width:180px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr class="borderTop">
+                            <th scope="col" class="first" style="width:180px;white-space:nowrap;">직책 1)</th>
+                            <td>준법감시본부장</td>
+                            <th scope="col">성명</th>
+                            <td>김한석</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="first" style="width:180px;white-space:nowrap;">직위 2)</th>
+                            <td>상무</td>
+                            <th scope="col">현 직책 부여일<br>(임원 선임일 등)</th>
+                            <td>2022-05-01</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="first" style="width:180px;white-space:nowrap;">겸직여부 3)</th>
+                            <td>Y</td>
+                            <th scope="col">겸직사항 4)</th>
+                            <td>준법감시인, 신용정보 관리, 보호인 겸 개인정보보호 책임자, 보고책임자<br>(2022년 5월 1일)</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="first" style="width:180px;white-space:nowrap;">소관부서</th>
+                            <td colspan="3">① 준법감시부 ② AML부<!--①②③④⑤--></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div><br>
+                        주&nbsp;1)&nbsp;직무에 대한 책임과 권한(대표이사, 의장, 본부장, 부문장, 그룹장 등)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;직무에 따라 규정되는 사내 지위(회장, 사장, 행장, 부사장, 부행장, 상무, 전무 등)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;3)&nbsp;다른 회사의 업무 또는 사내 다른 직책을 겸직하는 경우 포함<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;4)&nbsp;다른 회사에 겸직하고 있는 경우 그 회사명(자회사등 여부) 및 업종, 겸직하고 있는 업무 및 직위, 겸직기간을 기재하고,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사내 다른 직책을 겸직하고 있는 경우 겸직하고 있는 업무 및 직책, 겸직기간을 기재<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid w-full grid-cols-1 gap-8 xl:grid-cols-1 mt-5">
+            <div class="flex flex-auto flex-col w-full">
+                <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+                    <!--<div class="data_list_option">
+                        <div class="option_align left"></div>&lt;!&ndash; 건수 &ndash;&gt;
+                        <div class="option_align right"><button type="button" class="btn_print" title="프린트하기" (click)="printAllTabs()"><mat-icon class="mat-icon" svgIcon="heroicons_solid:printer"></mat-icon><span>현재 게시물 프린트하기</span></button></div>
+                    </div>-->
+                    <div class="customTabLink">
+                        <a [routerLink]="['overview-responsibilities']" routerLinkActive="active"><span>회의체</span></a>
+                        <a [routerLink]="['position-information']" routerLinkActive="active"><span>책무개요</span></a>
+                        <a [routerLink]="['responsibilities']" routerLinkActive="active"><span>책무내용</span></a>
+                        <a [routerLink]="['management-duties']" routerLinkActive="active"><span>주요관리의무</span></a>
+                    </div>
+
+                    <div class="customTabContent">
+                        <router-outlet></router-outlet>
+                        <div class="form_wrap">
+                            <div class="form_button_group">
+                                <div class="btn_group left">
+                                    <!--<app-base-button label="승인" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                                    <app-base-button label="반려" styleClass="btnCancel" icon="heroicons_solid:x-circle"></app-base-button>-->
+                                </div>
+                                <div class="btn_group right">
+                                    <app-base-button label="저장" styleClass="btnAdd" icon="heroicons_solid:check"></app-base-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div #printArea style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//todo
+1. 임원정보 및 탭 내용 MS-word 붙여넣기 기능 보완.
+2. 임원정보 및 탭 내용 수정할 수 있도록 form양식으로 변경.
+3. 저장결과 형태, 삭제 버튼만 추가.
+-->

@@ -1,0 +1,151 @@
+<div class="bg-card w-full overflow-hidden shadow rounded-2xl">
+    <div class="customBoardSearch">
+        <form *ngIf="type === 'default'">
+            <div class="search_wrap">
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>책무 기준연도</mat-label>
+                    <mat-select>
+                        <mat-option value="option1">2024</mat-option>
+                        <mat-option value="option2">2023</mat-option>
+                        <mat-option value="option3">2022</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>책무 기준회차</mat-label>
+                    <mat-select>
+                        <mat-option value="option1">2024</mat-option>
+                        <mat-option value="option2">2023</mat-option>
+                        <mat-option value="option3">2022</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="custom-datepicker">
+                    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field" title="검색 시작 날짜">
+                        <mat-label>조회 시작 날짜</mat-label>
+                        <!-- #docregion toggle -->
+                        <input matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                        <!-- #enddocregion toggle -->
+                    </mat-form-field>
+                    -
+                    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field" title="검색 종료 날짜">
+                        <mat-label>조회 종료 날짜</mat-label>
+                        <!-- #docregion toggle -->
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                        <!-- #enddocregion toggle -->
+                    </mat-form-field>
+                </div>
+                <button mat-flat-button type="submit" class="formButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>조회</span></button>
+            </div>
+        </form>
+        <form *ngIf="type === 'performCheck'">
+            <table class="dataTable type2 searchFormTable">
+                <caption>이행점검 관리 목록 검색 폼</caption>
+                <tbody>
+                <tr>
+                    <th scope="row" class="first">연도</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>연도 선택 Year</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">2024</mat-option>
+                                <mat-option value="option2">2023</mat-option>
+                                <mat-option value="option3">2022</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <th scope="row" class="first">분기</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>분기 선택 Quarterly</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">1분기</mat-option>
+                                <mat-option value="option2">2분기</mat-option>
+                                <mat-option value="option3">3분기</mat-option>
+                                <mat-option value="option4">4분기</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <th scope="row" class="first">점검상태</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>점검상태 선택 Inspection status</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">점검완료</mat-option>
+                                <mat-option value="option2">점검중</mat-option>
+                                <mat-option value="option3">점검대기</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="first">관리조치유형</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>관리조치유형 Management Action type</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">유형1</mat-option>
+                                <mat-option value="option2">유형2</mat-option>
+                                <mat-option value="option3">유형3</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <th scope="row" class="first">수행주기</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>수행주기 Performance Cycle</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">분기</mat-option>
+                                <mat-option value="option2">반기</mat-option>
+                                <mat-option value="option3">연례</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <th scope="row" class="first">검토처리상태</th>
+                    <td>
+                        <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                            <mat-label>검토처리상태 Review Processing Status</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">검토완료</mat-option>
+                                <mat-option value="option2">검토중</mat-option>
+                                <mat-option value="option3">검토대기</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="first">책무</th>
+                    <td colspan="5">
+                        <div class="searchFlex">
+                            <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                                <mat-label>검색어 입력 Keyword</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <button mat-flat-button type="submit" class="formButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>조회</span></button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <form *ngIf="type === 'bbs'">
+            <div class="search_wrap">
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>Select 요소</mat-label>
+                    <mat-select>
+                        <mat-option value="option1">선택1</mat-option>
+                        <mat-option value="option2">선택2</mat-option>
+                        <mat-option value="option3">선택3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>검색어 입력 Keyword</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <button mat-flat-button type="submit" class="formButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>조회</span></button>
+            </div>
+        </form>
+    </div>
+</div>

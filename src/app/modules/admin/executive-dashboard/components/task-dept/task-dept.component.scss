@@ -1,0 +1,10 @@
+.custom_button{display:block;width:calc(50% - 30px);height:150px !important;max-height:initial !important;margin:0 15px;padding:0 !important;background:#ecf0fd !important;border-radius:15px !important;color:#312e80 !important;
+    .mat-icon{color:#4e45e3 !important;}
+}
+
+.custom_button svg,.custom_button .mat-icon{display:block !important;width:40px !important;height:40px !important;font-size:40px !important;line-height:40px !important;margin:0 auto 20px !important;}
+
+@media all and (max-width:1440px) {
+    .custom_button{height:auto !important;padding:2px 0 0 !important;}
+    .custom_button svg,.custom_button .mat-icon{display:inline-block !important;width:24px !important;height:24px !important;font-size:24px !important;line-height:24px !important;margin:-5px 10px 0 0 !important;}
+}

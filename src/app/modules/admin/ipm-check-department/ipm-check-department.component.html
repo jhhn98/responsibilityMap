@@ -1,0 +1,52 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>부서별 내부통제활동<span class="subTitle">English title</span></h2>
+        <app-data-search *ngIf="default" [type]="'default'"></app-data-search>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="data_list_option">
+                <div class="option_align left">전체 <span class="data_count" #dataCount>0</span>건</div>
+                <div class="option_align right"><button mat-flat-button type="button" class="custom-option-button"><span>결재상신</span></button></div>
+            </div>
+            <div class="board_wrap list">
+                <table #table class="dataTable">
+                    <caption>부서별 이행점검 목록</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">점검년월</th>
+                        <th scope="col">점검부서</th>
+                        <th scope="col">관련책무</th>
+                        <th scope="col">점검항목</th>
+                        <th scope="col">점검자</th>
+                        <th scope="col">점검일자</th>
+                        <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr *ngFor="let row of tableData">
+                        <td class="first"><a [routerLink]="['/ipm-check-department/detail-data']" class="detailView"><span>상세보기</span></a>{{ row.checkYear }}</td>
+                        <td>{{ row.checkDepartment }}</td>
+                        <td><button class="list_modal_button" (click)="openModal(row)"><span>책무</span></button></td>
+                        <td class="text-left">{{ row.checkList }}</td>
+                        <td>{{ row.checkManager }}</td>
+                        <td>{{ row.checkDate }}</td>
+                        <td [innerHTML]="row.checkStatus">{{ row.checkStatus }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="customPaginator">
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page"></mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>
+

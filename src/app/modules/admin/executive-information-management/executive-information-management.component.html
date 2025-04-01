@@ -1,0 +1,93 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>임원정보관리<span class="subTitle">Accountability Management Standards</span></h2>
+        <app-data-search *ngIf="default" [type]="'default'"></app-data-search>
+        <div class="bg-card w-full overflow-hidden shadow rounded-2xl mt-5">
+            <div class="contentWrap">
+                <div class="data_list_option padding-0">
+                    <div class="option_align left"></div>
+                    <div class="option_align right">
+                        <app-base-button label="엑셀 다운로드" icon="heroicons_solid:arrow-down-circle"></app-base-button>
+                    </div>
+                </div>
+                <form>
+                    <table class="dataTable type2">
+                        <caption>임원 목록</caption>
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:50px">
+                            <col style="width:70px">
+                            <col style="width:120px">
+                            <col style="width:70px">
+                            <col style="width:150px">
+                            <col style="width:80px">
+                            <col>
+                            <col style="width:150px">
+                            <col style="width:120px">
+                            <col style="width:130px">
+                            <col style="width:130px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="first">
+                                <section class="example-section padding-0">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </section>
+                            </th>
+                            <th scope="col">#</th>
+                            <th scope="col">성명</th>
+                            <th scope="col">직책</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">현직책부여일<br>(임원 선임일 등)</th>
+                            <th scope="col">겸직여부</th>
+                            <th scope="col">겸직사항</th>
+                            <th scope="col">소관부서</th>
+                            <th scope="col">주관회의체</th>
+                            <th scope="col">승인완료일자</th>
+                            <th scope="col">최초등록일자</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr>
+                            <td class="first">
+                                <section class="example-section padding-0">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </section>
+                            </td>
+                            <td><a [routerLink]="['/executive-information-management', 'view-data']" class="detailView"><span>상세보기</span></a>1</td>
+                            <td>김한석</td>
+                            <td>준법감시본부장</td>
+                            <td>상무</td>
+                            <td>2022-05-01</td>
+                            <td>Y</td>
+                            <td class="text-left">준법감시인, 신용정보관리&middot;보호인 겸 개인정보보호책임자, 보고책임자(2022-05-01)</td>
+                            <td class="text-left">① 준법감시부<br>② AML부</td>
+                            <td>
+                                <app-base-button label="상세보기" size="small" (action)="openDialog('detail')" styleClass="btnView" icon="heroicons_solid:magnifying-glass"></app-base-button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="data_list_option">
+                    <div class="option_align left">
+                        <app-base-button label="등록" styleClass="btnAdd" icon="heroicons_solid:plus-small"></app-base-button>
+                        <app-base-button label="수정" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                        <app-base-button label="삭제" styleClass="btnDelete" icon="heroicons_solid:x-mark"></app-base-button>
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="승인요청" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                        <app-base-button label="승인" styleClass="btnSave" icon="heroicons_solid:check-circle"></app-base-button>
+                        <app-base-button label="반려" styleClass="btnCancel" icon="heroicons_solid:x-circle"></app-base-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//todo
+1. 등록 버튼 작성폼 팝업 작업 ppt 25p
+2. 목록 25개 고정.
+-->

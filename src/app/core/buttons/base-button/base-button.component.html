@@ -1,0 +1,31 @@
+<ng-container [ngSwitch]="tag">
+    <ng-container *ngSwitchCase="'button'">
+        <button *ngIf="baseClass !== 'custom-option-textButton'" mat-flat-button [type]="type" [disabled]="disabled" [ngClass]="[baseClass, styleClass, size]" (click)="onClick($event)">
+            <ng-container *ngIf="icon">
+            <mat-icon class="mat-icon" [svgIcon]="icon"></mat-icon>
+            </ng-container>
+            <em>{{ label }}</em>
+        </button>
+        <button *ngIf="baseClass === 'custom-option-textButton'" [type]="type" [disabled]="disabled" [ngClass]="[baseClass, styleClass, size]" (click)="onClick($event)">
+            <ng-container *ngIf="icon">
+            <mat-icon class="mat-icon" [svgIcon]="icon"></mat-icon>
+            </ng-container>
+            <em>{{ label }}</em>
+        </button>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'a'">
+        <a *ngIf="baseClass !== 'custom-option-textButton'" mat-flat-button [href]="href" [routerLink]="routerLink || null" [ngClass]="[baseClass, styleClass, size]" (click)="onClick($event)"]>
+            <ng-container *ngIf="icon">
+            <mat-icon class="mat-icon" [svgIcon]="icon"></mat-icon>
+            </ng-container>
+            <em>{{ label }}</em>
+        </a>
+        <a *ngIf="baseClass === 'custom-option-textButton'" [href]="href" [routerLink]="routerLink || null" [ngClass]="[baseClass, styleClass, size]" (click)="onClick($event)">
+            <ng-container *ngIf="icon">
+            <mat-icon class="mat-icon" [svgIcon]="icon"></mat-icon>
+            </ng-container>
+            <em>{{ label }}</em>
+        </a>
+    </ng-container>
+</ng-container>

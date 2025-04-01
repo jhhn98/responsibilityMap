@@ -1,0 +1,48 @@
+<div class="grid w-full grid-cols-1 gap-8 xl:grid-cols-2">
+    <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl">
+        <div class="mx-6 py-6 overflow-x-auto">
+            <div class="text-secondary font-medium tracking-tight">부서 단위 점검 현황</div>
+            <div class="statusWrap">
+                <div class="statusElement">
+                    <button type="button" class="dialogButton" (click)="openDialog('status')"><span>상세보기</span></button>
+                    <app-circle [progress]="40" [circleSize]="'70%'" [inactiveColor]="'f6ad55'" [activeColor]="'dd6b20'" [title]="'점검율'"></app-circle>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span>999</span></strong>
+                    <span class="data_name">점검완료</span>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span>999</span></strong>
+                    <span class="data_name">진행중</span>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span class="text_color_orange">999</span></strong>
+                    <span class="data_name">미착수</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl">
+        <div class="mx-6 py-6 overflow-x-auto">
+            <div class="text-secondary font-medium tracking-tight">완료 부서 점검 결과</div>
+            <div class="statusWrap">
+                <div class="statusElement">
+                    <button type="button" class="dialogButton" (click)="openDialog('result')"><span>상세보기</span></button>
+                    <app-circle [progress]="90" [circleSize]="'70%'" [inactiveColor]="'b794f4'" [activeColor]="'805ad5'" [title]="'정상 비율'"></app-circle>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span>999</span></strong>
+                    <span class="data_name">총 점검항목</span>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span>999</span></strong>
+                    <span class="data_name">적정</span>
+                </div>
+                <div class="statusElement">
+                    <strong class="data_value"><span class="text_color_purple">999</span></strong>
+                    <span class="data_name">부적정</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

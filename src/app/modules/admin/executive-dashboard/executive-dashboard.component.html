@@ -1,0 +1,27 @@
+<div class="flex min-w-0 flex-auto flex-col">
+    <div class="flex-auto p-6 sm:p-10">
+        <div class="rounded-2xl">
+            <h4 class="text-2xl font-semibold leading-8 tracking-tight mb-3">점검항목 결재 대기<span class="subTitle">english title</span></h4>
+            <div class="grid w-full grid-cols-1 gap-8 xl:grid-cols-3">
+                <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl xl:col-span-2">
+                    <div class="mx-6 py-6 overflow-x-auto">
+                        <app-approval-pending></app-approval-pending>
+                    </div>
+                </div>
+                <div class="bg-card p-4 rounded-2xl shadow h-full">
+                    <app-task-dept></app-task-dept>
+                </div>
+            </div>
+            <!--<div class="h-15">
+                <h4 class="text-2xl font-semibold leading-8 tracking-tight">임원 대시보드</h4>
+                <div class="text-secondary font-medium tracking-tight"> Pending Approval List</div>
+            </div>
+            <p>executive-dashboard works!</p>
+            <button mat-button (click)="openModal()">다이얼로그 열기</button>-->
+            <h4 class="text-2xl font-semibold leading-8 tracking-tight mt-9">소관부서 이행점검현황<span class="text-secondary text-sm tracking-tight ml-3">기준월 : 2025년 9월</span></h4><span class="subTitle mb-3">english title</span>
+            <app-dept-status></app-dept-status>
+            <h4 class="text-2xl font-semibold leading-8 tracking-tight mt-9 mb-3">부적정 점검항목 미조치 현황<span class="subTitle">english title</span></h4>
+            <app-unresolved-issues></app-unresolved-issues>
+        </div>
+    </div>
+</div>

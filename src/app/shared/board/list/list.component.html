@@ -1,0 +1,62 @@
+<div class="grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h4 class="text-2xl font-semibold leading-8 tracking-tight mb-3">{{ bbsId === 'bbs01' ? '공지사항' : '게시판 예제' }}<span class="subTitle">english title</span></h4>
+        <app-data-search *ngIf="bbs" [type]="'bbs'"></app-data-search>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="data_list_option">
+                <div class="option_align left"></div><!-- 건수 -->
+                <div class="option_align right">전체 <span class="data_count">{{ totalItems }}</span>건</div>
+            </div>
+            <div class="board_wrap list">
+                <table class="dataTable">
+                    <caption>공지사항 목록</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">번호</th>
+                        <th scope="col">카테고리</th>
+                        <th scope="col" data-sort-key="title">제목<button title="내림차순" data-sort-button class="sort-button" (click)="sortList('title', $event)"><mat-icon class="mat-icon" [svgIcon]="getSortIcon('title')"></mat-icon><span>정렬</span></button></th>
+                        <th scope="col">첨부파일</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col" data-sort-key="date">등록일<button title="내림차순" data-sort-button class="sort-button" (click)="sortList('date', $event)"><mat-icon class="mat-icon" [svgIcon]="getSortIcon('date')"></mat-icon><span>정렬</span></button></th>
+                        <th scope="col" data-sort-key="viewCount">조회수<button title="내림차순" data-sort-button class="sort-button" (click)="sortList('viewCount', $event)"><mat-icon class="mat-icon" [svgIcon]="getSortIcon('viewCount')"></mat-icon><span>정렬</span></button></th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr *ngFor="let bbs of bbsData">
+                        <td class="first"><a [routerLink]="['/board', bbsId, 'detail', bbs.bbsDetailId]" class="detailView"><span>상세보기</span></a>{{ bbs.no }}</td>
+                        <td>{{ bbs.category }}</td>
+                        <td class="text-left">{{ bbs.title }}</td>
+                        <td class="field-attachment">
+                            <div class="attachment-wrap" *ngIf="bbs.file && bbs.file.length > 0; else noFile">
+                                <button type="button" data-file-button class="attachment-button" (click)="toggleActive($event)"><mat-icon class="mat-icon" svgIcon="heroicons_outline:document-text"></mat-icon><span>첨부파일 리스트</span></button>
+                                <ul class="attachment-list">
+                                    <li *ngFor="let bbsFile of bbs.file">
+                                        <a href="{{ bbsFile.path }}" title="{{ bbsFile.name }}"><span>{{ bbsFile.name }}</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ng-template #noFile><span>첨부 파일 없음</span></ng-template>
+                        </td>
+                        <td>{{ bbs.author }}</td>
+                        <td>{{ bbs.date | date: 'yyyy-MM-dd' }}</td>
+                        <td>{{ bbs.viewCount }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="customPaginator">
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page"></mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>
+

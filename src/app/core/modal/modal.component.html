@@ -1,0 +1,8 @@
+<div class="customDialogWrap">
+    <h2>{{ data.title }}</h2>
+    <mat-dialog-content>
+        <ng-container *ngComponentOutlet="data.component"></ng-container>
+    </mat-dialog-content>
+    <button mat-dialog-close class="dialogCloseButton"><span>닫기</span></button>
+</div>
+

@@ -1,0 +1,133 @@
+<!-- 여기서 버튼의 값을 받아서 데이터를 선택 -->
+<div class="dialog_content" *ngIf="data.dialogName === 'status'">
+    <div class="dialogSideText"><strong>2025년 9월 기준</strong></div>
+    <table class="dialogDataTable">
+        <caption>부서단위 점검 현황</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col" class="first">상태</th>
+            <th scope="col">부서</th>
+            <th scope="col">책무</th>
+            <th scope="col">책무상세</th>
+            <th scope="col">관리의무</th>
+            <th scope="col">점검항목</th>
+        </tr>
+        </thead>
+        <tbody class="text-right">
+        <tr>
+            <th scope="row" class="first text-center" rowspan="2">점검완료</th>
+            <td class="text-left">운영리스크관리부</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td class="text-left">기업여신관리부</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first text-center" rowspan="2">진행중</th>
+            <td class="text-left">소비자여신관리부</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="text-left">소비자금융리스크관리부</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first text-center">미착수</th>
+            <td class="text-left">여신관리본부</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- or -->
+<div class="dialog_content" *ngIf="data.dialogName === 'result'">
+    <div class="dialogSideText"><strong>2025년 9월 기준</strong></div>
+    <div class="dialogDataTitle"><strong>부서별 현황</strong></div>
+    <table class="dialogDataTable">
+        <caption>부서별 현황</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col" class="first">부서</th>
+            <th scope="col">총 점검항목</th>
+            <th scope="col">적정</th>
+            <th scope="col">부적정</th>
+        </tr>
+        </thead>
+        <tbody class="text-right">
+        <tr>
+            <th scope="row" class="first text-center">리스크기획부</th>
+            <td>4</td>
+            <td>4</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th scope="row" class="first text-center">운영리스크관리부</th>
+            <td>6</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+        <tfoot class="text-right">
+        <tr>
+            <th scope="row" class="first text-center">합계</th>
+            <td>10</td>
+            <td>9</td>
+            <td>1</td>
+        </tr>
+        </tfoot>
+    </table>
+    <div class="dialogDataTitle mt-7"><strong>부적정 항목 현황</strong><span class="ml-4">[총 1건]</span></div>
+    <table class="dialogDataTable">
+        <caption>부서별 현황</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col" class="first">부적정 항목</th>
+            <th scope="col">담당 부서</th>
+            <th scope="col">부적정 사유</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="first">위험관리 내규 제&middot;개정</td>
+            <td>운영리스크관리부</td>
+            <td>OO시행령 변경사항 미반영</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

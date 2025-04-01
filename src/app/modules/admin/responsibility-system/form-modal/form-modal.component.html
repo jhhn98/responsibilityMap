@@ -1,0 +1,53 @@
+<div class="dialog_content">
+    <mat-dialog-content>
+        <form [formGroup]="legendForm">
+            <table class="dialogDataTable formTable">
+                <caption>책무범례 수정</caption>
+                <colgroup>
+                    <col style="width:150px">
+                    <col style="width:400px">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row" class="first">책무구분<br>(시행령 별표1)</th>
+                    <td>
+                        <mat-form-field appearance="outline">
+                            <mat-label>책무 그룹 group</mat-label>
+                            <mat-select formControlName="groupTitle">
+                                <mat-option *ngFor="let group of legendGroups[0]?.legendGroup" [value]="group.groupTitle">{{ group.groupTitle }}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="first">책무내용</th>
+                    <td>
+                        <mat-form-field appearance="outline">
+                            <mat-label>책무 내용 content</mat-label>
+                            <input matInput formControlName="content">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="first">책무코드</th>
+                    <td>
+                        <mat-form-field appearance="outline">
+                            <mat-label>책무 코드 code</mat-label>
+                            <input matInput formControlName="code">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="data_list_option padding-0">
+                <div class="option_align left">
+                    <app-base-button label="저장" styleClass="btnAdd" icon="heroicons_solid:pencil-square" (action)="save()"></app-base-button>
+                </div>
+                <div class="option_align right">
+                    <app-base-button label="승인요청" styleClass="btnEdit" icon="heroicons_solid:pencil-square"></app-base-button>
+                    <app-base-button label="취소" styleClass="btnCancel" icon="heroicons_solid:x-mark"></app-base-button>
+                </div>
+            </div>
+        </form>
+    </mat-dialog-content>
+</div>

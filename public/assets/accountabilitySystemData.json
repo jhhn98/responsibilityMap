@@ -1,0 +1,171 @@
+[
+    {
+        "bankName": "CITI Bank",
+        "bankManager": {
+            "name": "유명순",
+            "position": "이사회 의장, 대표이사(은행장)",
+            "date": "2024.12.11",
+            "legend": "RA01,RA10,RC19"
+        },
+        "departments": [
+            {
+                "departmentName": "group1",
+                "staff": [
+                    {
+                        "name": "박성규",
+                        "position": "감사본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA02,RC20"
+                    },
+                    {
+                        "name": "김한석",
+                        "position": "준법감사본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA04,RA05,RA08,RC20"
+                    }
+                ]
+            },
+            {
+                "departmentName": "group2",
+                "staff": [
+                    {
+                        "name": "김경미",
+                        "position": "리스크관리본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA03,RC20"
+                    },
+                    {
+                        "name": "장은영",
+                        "position": "정보보안본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA04,RA05,RA08,RC20"
+                    },
+                    {
+                        "name": "김진숙",
+                        "position": "재무기획본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA06,RC14,RC15,RC20"
+                    },
+                    {
+                        "name": "김용준",
+                        "position": "금융소비자 보호본부장",
+                        "date": "2024.12.11",
+                        "legend": "RA09,RC20"
+                    }
+                ]
+            },
+            {
+                "departmentName": "group3",
+                "staff": [
+                    {
+                        "name": "김경호",
+                        "position": "기업금융그룹장",
+                        "date": "2024.12.11",
+                        "legend": "RB01,RC20"
+                    },
+                    {
+                        "name": "베트맨제이슨",
+                        "position": "기업금융 상품본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB02,RB03"
+                    },
+                    {
+                        "name": "황재필",
+                        "position": "커머셜사업본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB04,RC20"
+                    },
+                    {
+                        "name": "김지강",
+                        "position": "소비자금융그룹장",
+                        "date": "2024.12.11",
+                        "legend": "RB05,RB06,RB07,RB08,RB09,RB10"
+                    },
+                    {
+                        "name": "엄지용",
+                        "position": "자금시장본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB11,RB12,RB13,RC20"
+                    },
+                    {
+                        "name": "이희연",
+                        "position": "증권관리본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB14,RC20"
+                    },
+                    {
+                        "name": "반병철",
+                        "position": "신탁본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB15,RC20"
+                    },
+                    {
+                        "name": "권우재",
+                        "position": "기업금융 신용관리 부장",
+                        "date": "2024.12.11",
+                        "legend": "RB16,RC20"
+                    },
+                    {
+                        "name": "차크라블티닐란잔",
+                        "position": "대기업심사본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB17,RC20"
+                    },
+                    {
+                        "name": "김민관",
+                        "position": "커머셜심사본부장",
+                        "date": "2024.12.11",
+                        "legend": "RB18,RC20"
+                    },
+                    {
+                        "name": "윤희재",
+                        "position": "기업여신관리부장",
+                        "date": "2024.12.11",
+                        "legend": "RB19,RC20"
+                    }
+                ]
+            },
+            {
+                "departmentName": "group4",
+                "staff": [
+                    {
+                        "name": "윤효연",
+                        "position": "법무본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC01,RC02,RC03,RC04,RC20"
+                    },
+                    {
+                        "name": "이관영",
+                        "position": "인사본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC05,RC06,RC20"
+                    },
+                    {
+                        "name": "이주현",
+                        "position": "업무본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC07,RC08,RC09,RC10,RC11,RC12,RC13,RC20"
+                    },
+                    {
+                        "name": "엄경식",
+                        "position": "마케팅커뮤니케이션 본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC16,RC20"
+                    },
+                    {
+                        "name": "김태연",
+                        "position": "전산본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC17,RC20"
+                    },
+                    {
+                        "name": "정희성",
+                        "position": "경영기획본부장",
+                        "date": "2024.12.11",
+                        "legend": "RC18,RC20"
+                    }
+                ]
+            }
+        ]
+    }
+]

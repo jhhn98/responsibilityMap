@@ -1,0 +1,186 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col w-full">
+        <h2>임원별 이행점검<span class="subTitle">English title</span></h2>
+        <app-data-search *ngIf="default" [type]="'default'"></app-data-search>
+        <div class="bg-card flex flex-auto flex-col overflow-hidden shadow rounded-2xl w-full mt-5">
+            <div class="data_list_option">
+                <div class="option_align left">전체 <span class="data_count">123</span>건</div>
+                <div class="option_align right"><button mat-flat-button type="button" class="custom-option-button"><span>결재상신</span></button></div>
+            </div>
+            <div class="board_wrap list">
+                <table class="dataTable">
+                    <caption>부서별 이행점검 목록</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">점검년월</th>
+                        <th scope="col">점검부서</th>
+                        <th scope="col">관련책무</th>
+                        <th scope="col">점검항목</th>
+                        <th scope="col">점검자</th>
+                        <th scope="col">점검일자</th>
+                        <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first"><a href="" class="detailView"><span>상세보기</span></a>2024-12</td>
+                        <td>구조화신탁부</td>
+                        <td><button class="list_modal_button"><span>책무</span></button></td>
+                        <td class="text-left">영업계획 수립에 대한 관리 및 점검</td>
+                        <td>김담당</td>
+                        <td>2024-12-12</td>
+                        <td>등록</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="customPaginator">
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page"></mat-paginator>
+            </div>
+        </div>
+        <!-- 목록에서 항목 클릭하면 아래 내용이 표시됨 -->
+        <div>
+            <h2 class="mt-10">책무 이행점검<span class="subTitle">English title</span></h2>
+            <div class="bg-card overflow-hidden shadow rounded-2xl w-full">
+                <div class="dataDetail">
+                    <h3>부서 점검항목<span class="subTitle">English title</span></h3>
+                    <table class="dataTable">
+                        <caption>점검 상태</caption>
+                        <colgroup>
+                            <col style="width:15%">
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                        </colgroup>
+                        <tbody class="text-center">
+                        <tr>
+                            <th scope="row" class="first">점검부서</th>
+                            <td>구조화신탁부</td>
+                            <th scope="row">점검년월</th>
+                            <td>2024-12</td>
+                            <th scope="row">상태</th>
+                            <td>승인요청</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="dataTable mt-4">
+                        <caption>점검항목 상세</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="first">순번</th>
+                            <th scope="col">점검항목</th>
+                            <th scope="col">관련책무</th>
+                            <th scope="col">점검자</th>
+                            <th scope="col">점검일시</th>
+                            <th scope="col">점검결과</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr>
+                            <th scope="row" class="first"><button class="detailView"><span>상세보기</span></button>1</th>
+                            <td class="text-left">신탁재산의 신탁 적격성에 대한 관리 및 점검</td>
+                            <td><button type="button" class="list_modal_button"><span>책무</span></button></td>
+                            <td>김부장</td>
+                            <td>2024-12-12</td>
+                            <td>적정</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first"><button class="detailView"><span>상세보기</span></button>2</th>
+                            <td class="text-left">적법한 신탁계약조건의 준수에 대한 관리 및 점검</td>
+                            <td><button type="button" class="list_modal_button"><span>책무</span></button></td>
+                            <td>김부장</td>
+                            <td>2024-12-12</td>
+                            <td>적정</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="first"><button class="detailView"><span>상세보기</span></button>3</th>
+                            <td class="text-left">신탁관련 내규의 제정개폐에 대한 관리 및 점검</td>
+                            <td><button type="button" class="list_modal_button"><span>책무</span></button></td>
+                            <td>김부장</td>
+                            <td>2024-12-12</td>
+                            <td>부적정</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-card overflow-hidden shadow rounded-2xl w-full mt-4">
+                <div class="dataDetail">
+                    <h3>점검 결과 검토<span class="subTitle">English title</span></h3>
+                    <div class="form_wrap opinion_wrap">
+                        <div class="form_group">
+                            <div class="form_text">
+                                <div class="text_element">
+                                    <strong>부서 점검 결과</strong>
+                                </div>
+                                <div class="text_element">
+                                    <mat-radio-button value="1">적정</mat-radio-button>
+                                    <mat-radio-button value="2">부적정</mat-radio-button>
+                                </div>
+                            </div>
+                            <div class="form_element">
+                                <div class="form_detail_element opinion_textarea">
+                                    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full h-full bg-white">
+                                        <mat-label>점검 결과</mat-label>
+                                        <textarea matInput placeholder="점검결과를 요약하여 기술하십시오." readonly>신탁 적격정 점검결과.. ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+        ㅇㅇㅇ 확인 함</textarea>
+                                    </mat-form-field>
+                                </div>
+                                <div class="form_detail_element opinion_file">
+                                    <div class="customInputFile">
+                                        <div class="fileList block">
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙1.docx</span></span>
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙2.docx</span></span>
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙3.docx</span></span>
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙4.docx</span></span>
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙5.docx</span></span>
+                                            <span class="file_name"><mat-icon svgIcon="mat_solid:file_present"></mat-icon><span>증빙6.docx</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <div class="form_element single">
+                                <div class="form_detail_element opinion_textarea">
+                                    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="w-full h-full bg-white">
+                                        <mat-label>임원 검토 의견</mat-label>
+                                        <textarea matInput placeholder="미흡사항, 발생원인 및 대응방안을 기술하십시오."></textarea>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_button_group">
+                            <div class="btn_group left">
+                                <button mat-flat-button type="submit" class="btn_approval"><span>승인</span></button>
+                                <button mat-flat-button type="submit" class="btn_companion"><span>반려</span></button>
+                            </div>
+                            <div class="btn_group right">
+                                <button mat-flat-button type="submit" class="btn_save"><span>저장</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
