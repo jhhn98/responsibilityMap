@@ -47,13 +47,13 @@ export class DetailModalComponent  implements OnInit {
     selected = '';
 
     ngOnInit(): void {
-        this.http.get<any[]>('/assets/treeData1.json').subscribe(data => {
+        this.http.get<any[]>('assets/treeData1.json').subscribe(data => {
             setTimeout( ()=> {
                 this.treeData1 = data;
             });
         });
 
-        this.http.get<any[]>('/assets/treeData2.json').subscribe(data => {
+        this.http.get<any[]>('assets/treeData2.json').subscribe(data => {
             setTimeout( ()=> {
                 this.treeData2 = data;
             });

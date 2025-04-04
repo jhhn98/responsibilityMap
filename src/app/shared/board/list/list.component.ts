@@ -37,7 +37,7 @@ export class ListComponent implements OnInit {
     }
 
     loadBoardData() {
-        const jsonFile = `/assets/bbs-data/${this.bbsId}_data.json`;
+        const jsonFile = `assets/${this.bbsId}_data.json`;
 
         this.http.get(jsonFile).subscribe({
             next: (data: any) => {

@@ -32,7 +32,7 @@ export class DetailComponent implements OnInit {
     }
 
     loadDetailData(bbsId: string, bbsDetailId: string | null) {
-        const dataUrl = `/assets/bbs-data/${bbsId}_data.json`;
+        const dataUrl = `assets/${bbsId}_data.json`;
 
         this.http.get(dataUrl).subscribe({
             next: (data: any) => {

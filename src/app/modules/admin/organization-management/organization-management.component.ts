@@ -18,7 +18,7 @@ export class OrganizationManagementComponent implements OnInit {
     constructor( public http:HttpClient ) {}
 
     ngOnInit(): void {
-        this.http.get<any[]>('/assets/treeData1.json').subscribe(data => {
+        this.http.get<any[]>('assets/treeData1.json').subscribe(data => {
             setTimeout(() => {
                 this.treeData1 = data;
             });

@@ -110,18 +110,18 @@ export class ResponsibilitySystemComponent {
         this.http
             .get<
                 AccountabilityList[]
-            >('/assets/accountabilitySystemListData.json')
+            >('assets/accountabilitySystemListData.json')
             .subscribe((data: AccountabilityList[]) => {
                 this.accountabilityListSet = data;
             });
         this.http
-            .get<LegendGroup[]>('/assets/accountabilitySystemLegendData.json')
+            .get<LegendGroup[]>('assets/accountabilitySystemLegendData.json')
             .subscribe((data) => {
                 this.legendGroups = data;
             });
 
         this.http
-            .get<Bank[]>('/assets/accountabilitySystemData.json')
+            .get<Bank[]>('assets/accountabilitySystemData.json')
             .subscribe((data) => {
                 this.bank = data;
 

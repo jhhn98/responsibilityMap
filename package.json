@@ -8,7 +8,9 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
+        "build": "npx ng build --configuration production --base-href ./ --deploy-url ./",
+        "move": "mkdir -p dist/responsibilityMap/browser/rms && mv dist/responsibilityMap/browser/* dist/responsibilityMap/browser/rms/",
+        "build:custom" : "npm run build && npm run move",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
     },
