@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "ng serve --proxy-config proxy.conf.json",
         "build": "npx ng build --configuration production --base-href ./ --deploy-url ./",
         "move": "mkdir -p dist/responsibilityMap/browser/rms && mv dist/responsibilityMap/browser/* dist/responsibilityMap/browser/rms/",
         "build:custom" : "npm run build && npm run move",
