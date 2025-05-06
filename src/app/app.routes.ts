@@ -89,6 +89,7 @@ export const appRoutes: Route[] = [
         },
         children: [
 
+            {path: 'responsibility-set', loadChildren: () => import('app/modules/admin/responsibility-set/responsibility-set.routes')},
             {path: 'responsibility-system', loadChildren: () => import('app/modules/admin/responsibility-system/responsibility-system.routes')},
             {path: 'bank-responsibility-map', loadChildren: () => import('app/modules/admin/bank-responsibility-map/bank-responsibility-map.routes').then(m => m.BankResponsibilityMapRoutingModule)},
             {path: 'executive-responsibility-map', loadChildren: () => import('app/modules/admin/executive-responsibility-map/executive-responsibility-map.routes').then(m => m.ExecutiveResponsibilityMapRoutingModule)},

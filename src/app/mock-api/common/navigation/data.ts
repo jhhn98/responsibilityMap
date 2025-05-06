@@ -18,6 +18,12 @@ export const defaultNavigation: FuseNavigationItem[] = [
         icon : 'heroicons_outline:table-cells',
         children: [
             {
+                id: 'apps.responsibilitySet',
+                title: '책무체계도 관리',
+                type: 'basic',
+                link: '/responsibility-set'
+            },
+            {
                 id: 'apps.responsibilitySystem',
                 title: '책무체계도 조회',
                 type: 'basic',

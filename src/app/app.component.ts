@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-import { ApiService } from './services/api.service'
 
 @Component({
     selector: 'app-root',
@@ -9,15 +7,9 @@ import { ApiService } from './services/api.service'
     styleUrls: ['./app.component.scss'],
     imports: [RouterOutlet],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     /**
      * Constructor
      */
-    constructor(private http: HttpClient) {}
-
-    ngOnInit() {
-        this.http.get('/posts/pictures?method=GetPictures').subscribe((returnedStuff) => {
-            console.log(returnedStuff);
-        });
-    }
+    constructor() {}
 }

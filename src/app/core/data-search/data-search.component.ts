@@ -30,5 +30,5 @@ import { MatDatepicker, MatDatepickerInput, MatDatepickerToggle } from '@angular
     styleUrl: './data-search.component.scss',
 })
 export class DataSearchComponent {
-    @Input() type!: 'default' | 'performCheck' | 'bbs';
+    @Input() type!: 'default' | 'performCheck' | 'bbs' | 'dialogDefault';
 }

@@ -10,7 +10,7 @@ $visually-hidden-style: (position:absolute,width:1px,height:1px,margin:-1px,padd
 
 .customDialogWrap{position:relative;min-width:300px;
     &::before{content:'';display:block;position:absolute;top:-24px;left:-24px;right:-24px;height:65px;background:#ebe9e9;}
-    .mat-mdc-dialog-content{padding:20px 0 !important;}
+    .mat-mdc-dialog-content{height:calc(100% - 30px);margin-bottom:30px;padding:20px 0 !important;}
     h2{position:relative;z-index:1;margin:0 40px 24px 0;color:#1e293b;font-size:16px;font-weight:900;}
     mat-form-field .mat-hint,mat-form-field .mat-error{display:none;}
     mat-form-field .mat-mdc-form-field-subscript-wrapper{display:none;}
@@ -18,7 +18,8 @@ $visually-hidden-style: (position:absolute,width:1px,height:1px,margin:-1px,padd
     .mdc-text-field--outlined .mat-mdc-form-field-infix{min-height:44px;padding:10px 0;}
 }
 .dialogSideText{text-align:right;}
-.dialogDataTitle{display:block;padding:5px 0;
+.dialogDataTitle{display:block;margin:30px 0 0;padding:5px 0;
+    &.first{margin:0;}
     strong{display:inline-block;position:relative;padding:0 0 0 15px;font-weight:700;
         &::before{content:'';display:block;position:absolute;top:7px;left:1px;width:8px;height:8px;background:#fff;border-top:2px solid #9d1c1f;border-right:2px solid #9d1c1f;border-radius:0 5px 0 5px;box-shadow:-2px 2px 1px rgba(0,0,0,0.15);transform:rotate(-45deg);}
     }
@@ -26,7 +27,7 @@ $visually-hidden-style: (position:absolute,width:1px,height:1px,margin:-1px,padd
 .dialogDataTable{width:100%;border-top:2px solid #666;
     + .dialogDataTable{margin:40px 0 0;}
     caption{@include visually-hidden;}
-    th, td{padding:10px 10px;border-bottom:1px solid #ccc;border-left:1px solid #ccc;}
+    th, td{padding:10px 10px;border-bottom:1px solid #ccc;border-left:1px solid #ccc;vertical-align:middle;}
     .first{border-left:none;}
     th{background:#f1f3f5;}
     tfoot{
@@ -49,3 +50,4 @@ $visually-hidden-style: (position:absolute,width:1px,height:1px,margin:-1px,padd
 .dialogFormButton{min-height:initial !important;max-height:initial !important;height:44px !important;margin:0 0 0 10px;
     span{@include visually-hidden;}
 }
+.modal-footer-button{display:block;position:absolute;left:0;bottom:0;width:100%;text-align:right;}

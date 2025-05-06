@@ -147,5 +147,21 @@
                 <button mat-flat-button type="submit" class="formButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>조회</span></button>
             </div>
         </form>
+        <form *ngIf="type === 'dialogDefault'">
+            <div class="search_wrap">
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>구분</mat-label>
+                    <mat-select>
+                        <mat-option value="option1">성명</mat-option>
+                        <mat-option value="option2">부서명</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" subscriptSizing="dynamic" class="custom_form_field">
+                    <mat-label>검색어 입력 Keyword</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <button mat-flat-button type="submit" class="formButton"><mat-icon class="mat-icon" svgIcon="heroicons_solid:magnifying-glass"></mat-icon><span>검색</span></button>
+            </div>
+        </form>
     </div>
 </div>

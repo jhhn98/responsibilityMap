@@ -1,0 +1,188 @@
+<div class="contents-area grid w-full p-6 sm:p-10">
+    <div class="flex flex-auto flex-col">
+        <h2 class="mt-8 titleBlock">결재권자등록 및 관리<span class="subTitle">English Title</span></h2>
+        <!--<app-data-search *ngIf="default" [type]="'default'"></app-data-search>-->
+        <div class="bg-card w-full overflow-hidden shadow rounded-2xl">
+            <div class="contentWrap">
+                <!--<div class="data_list_option padding-0">
+                    <div class="option_align left">전체 <span class="data_count">0</span>건</div>
+                    <div class="option_align right">
+                        <app-base-button label="엑셀 다운로드" icon="heroicons_solid:arrow-down-circle"></app-base-button>
+                    </div>
+                </div>-->
+                <div class="content-horizon-group">
+                    <div class="content-wrap width-40">
+                        <table class="dataTable type2">
+                            <caption>결재권자 등록 및 관리-1단계</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col" colspan="4" class="first">1단계</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan="2" class="first">부서원(팀장/점검담당자)</th>
+                                <th scope="col" colspan="2">대직자</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="first">성명</th>
+                                <th scope="col">직위</th>
+                                <th scope="col">성명</th>
+                                <th scope="col">직위</th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-center">
+                            <tr class="border-bottom-lightly">
+                                <td class="first"><span data-name="employee_1">박OO</span></td>
+                                <td><span data-name="employee_1">부부장</span></td>
+                                <td><span data-name="employee_2">김OO</span></td>
+                                <td><span data-name="employee_2">부부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="first">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_1" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_1" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_2" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_2" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom-lightly">
+                                <td class="first"><span data-name="employee_6">임OO</span></td>
+                                <td><span data-name="employee_6">부부장</span></td>
+                                <td><span data-name="employee_7">최OO</span></td>
+                                <td><span data-name="employee_7">부부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="first">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_6" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_6" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_7" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_7" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content-wrap width-40">
+                        <table class="dataTable type2">
+                            <caption>결재권자 등록 및 관리-2단계</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:25%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col" colspan="4">2단계</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan="2">부서장</th>
+                                <th scope="col" colspan="2">대직자</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">성명</th>
+                                <th scope="col">직위</th>
+                                <th scope="col">성명</th>
+                                <th scope="col">직위</th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-center">
+                            <tr class="border-bottom-lightly">
+                                <td><span data-name="employee_3">차OO</span></td>
+                                <td><span data-name="employee_3">부부장</span></td>
+                                <td><span data-name="employee_4">이OO</span></td>
+                                <td><span data-name="employee_4">부부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_3" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_3" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_4" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_4" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom-lightly">
+                                <td><span data-name="employee_8">박OO</span></td>
+                                <td><span data-name="employee_8">부부장</span></td>
+                                <td><span data-name="employee_9">윤OO</span></td>
+                                <td><span data-name="employee_9">부부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_8" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_8" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_9" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_9" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content-wrap width-20">
+                        <table class="dataTable type2">
+                            <caption>결재권자 등록 및 관리-3단계</caption>
+                            <colgroup>
+                                <col style="width:50%">
+                                <col style="width:50%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col" colspan="2">3단계</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan="2">임원</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">성명</th>
+                                <th scope="col">직위</th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-center">
+                            <tr class="border-bottom-lightly">
+                                <td><span data-name="employee_5">최OO</span></td>
+                                <td><span data-name="employee_5">본부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_5" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_5" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom-lightly">
+                                <td><span data-name="employee_10">강OO</span></td>
+                                <td><span data-name="employee_10">본부장</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <app-base-button label="변경" styleClass="small btnEdit" data-edit-name="employee_10" (action)="openDialog('setEdit')"></app-base-button>
+                                    <app-base-button label="삭제" styleClass="small btnDelete" data-delete-name="employee_10" (action)="openDialog('setDelete')"></app-base-button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="data_list_option">
+                <div class="option_align left">
+                </div>
+                <div class="option_align right">
+                    <app-base-button label="결재권자 신규 등록" styleClass="btnAdd" icon="heroicons_solid:plus-small" (action)="openDialog('setAdd')"></app-base-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

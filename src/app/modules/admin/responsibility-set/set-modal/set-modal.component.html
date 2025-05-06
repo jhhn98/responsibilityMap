@@ -1,0 +1,347 @@
+<ng-container [ngSwitch]="data.dialogType">
+    <div *ngSwitchCase="'setAdd'">
+        <div class="content-horizon-group">
+            <div class="content-wrap width-60">
+                <app-data-search *ngIf="dialogDefault" [type]="'dialogDefault'" class="dialog-search"></app-data-search>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="결재권자 지정" styleClass="btnAdd small"></app-base-button>
+                        <app-base-button label="대직자 지정" styleClass="btnAdd small"></app-base-button>
+                    </div>
+                </div>
+                <div class="scroll-y-wrap">
+                    <table class="dialogDataTable formTable mt-5">
+                        <caption>직원 목록</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col" colspan="2" class="first">그룹/본부/부서명</th>
+                            <th scope="col">성명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">SOEID</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>박OO</td>
+                            <td>부장</td>
+                            <td>AB12345</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>강OO</td>
+                            <td>부장</td>
+                            <td>AB12346</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>장OO</td>
+                            <td>부장</td>
+                            <td>AB12347</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>이OO</td>
+                            <td>부장</td>
+                            <td>AB12348</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>최OO</td>
+                            <td>부장</td>
+                            <td>AB12349</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>연OO</td>
+                            <td>부장</td>
+                            <td>AB12349</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>박OO</td>
+                            <td>부부장</td>
+                            <td>AB12350</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>백OO</td>
+                            <td>부장</td>
+                            <td>AB12351</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>차OO</td>
+                            <td>부부장</td>
+                            <td>AB12352</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>한OO</td>
+                            <td>수석</td>
+                            <td>AB12353</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="결재권자 지정" styleClass="btnAdd small"></app-base-button>
+                        <app-base-button label="대직자 지정" styleClass="btnAdd small"></app-base-button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap width-40 padd-20">
+                <div class="dialogDataTitle first">승인 Level</div>
+                <div>
+                    <mat-radio-button value="1">1단계</mat-radio-button>
+                    <mat-radio-button value="2" class="ml-3">2단계</mat-radio-button>
+                    <mat-radio-button value="3" class="ml-3">3단계</mat-radio-button>
+                </div>
+                <div class="dialogDataTitle">결재권자</div>
+                <table class="dialogDataTable formTable">
+                    <caption>결재권자</caption>
+                    <colgroup>
+                        <col style="width:33%">
+                        <col style="width:33%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">성명</th>
+                        <th scope="col">직위</th>
+                        <th scope="col">SOEID</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first">차OO</td>
+                        <td>부부장</td>
+                        <td>AB11111</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="dialogDataTitle">대직자</div>
+                <table class="dialogDataTable formTable">
+                    <caption>대직자</caption>
+                    <colgroup>
+                        <col style="width:33%">
+                        <col style="width:33%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">성명</th>
+                        <th scope="col">직위</th>
+                        <th scope="col">SOEID</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first">박OO</td>
+                        <td>부장</td>
+                        <td>AB12345</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer-button">
+            <app-base-button label="저장" styleClass="btnSave small"></app-base-button>
+            <app-base-button label="취소" styleClass="btnCancel small"></app-base-button>
+        </div>
+    </div>
+    <div *ngSwitchCase="'setEdit'">
+        <div class="content-horizon-group">
+            <div class="content-wrap width-60">
+                <app-data-search *ngIf="dialogDefault" [type]="'dialogDefault'" class="dialog-search"></app-data-search>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="결재권자 지정" styleClass="btnAdd small"></app-base-button>
+                        <app-base-button label="대직자 지정" styleClass="btnAdd small"></app-base-button>
+                    </div>
+                </div>
+                <div class="scroll-y-wrap">
+                    <table class="dialogDataTable formTable mt-5">
+                        <caption>직원 목록</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col" colspan="2" class="first">그룹/본부/부서명</th>
+                            <th scope="col">성명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">SOEID</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>박OO</td>
+                            <td>부장</td>
+                            <td>AB12345</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>강OO</td>
+                            <td>부장</td>
+                            <td>AB12346</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>장OO</td>
+                            <td>부장</td>
+                            <td>AB12347</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>이OO</td>
+                            <td>부장</td>
+                            <td>AB12348</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>최OO</td>
+                            <td>부장</td>
+                            <td>AB12349</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>연OO</td>
+                            <td>부장</td>
+                            <td>AB12349</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>박OO</td>
+                            <td>부부장</td>
+                            <td>AB12350</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>백OO</td>
+                            <td>부장</td>
+                            <td>AB12351</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>차OO</td>
+                            <td>부부장</td>
+                            <td>AB12352</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><mat-checkbox></mat-checkbox></td>
+                            <td>준법감시부</td>
+                            <td>한OO</td>
+                            <td>수석</td>
+                            <td>AB12353</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="data_list_option padding-0">
+                    <div class="option_align left">
+                    </div>
+                    <div class="option_align right">
+                        <app-base-button label="결재권자 지정" styleClass="btnAdd small"></app-base-button>
+                        <app-base-button label="대직자 지정" styleClass="btnAdd small"></app-base-button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap width-40 padd-20">
+                <div class="dialogDataTitle first">승인 Level</div>
+                <div>
+                    <mat-radio-button value="1">1단계</mat-radio-button>
+                    <mat-radio-button value="2" class="ml-3">2단계</mat-radio-button>
+                    <mat-radio-button value="3" class="ml-3">3단계</mat-radio-button>
+                </div>
+                <div class="dialogDataTitle">결재권자</div>
+                <table class="dialogDataTable formTable">
+                    <caption>결재권자</caption>
+                    <colgroup>
+                        <col style="width:33%">
+                        <col style="width:33%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">성명</th>
+                        <th scope="col">직위</th>
+                        <th scope="col">SOEID</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first">차OO</td>
+                        <td>부부장</td>
+                        <td>AB11111</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="dialogDataTitle">대직자</div>
+                <table class="dialogDataTable formTable">
+                    <caption>대직자</caption>
+                    <colgroup>
+                        <col style="width:33%">
+                        <col style="width:33%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">성명</th>
+                        <th scope="col">직위</th>
+                        <th scope="col">SOEID</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    <tr>
+                        <td class="first">박OO</td>
+                        <td>부장</td>
+                        <td>AB12345</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer-button">
+            <app-base-button label="저장" styleClass="btnSave small"></app-base-button>
+            <app-base-button label="취소" styleClass="btnCancel small"></app-base-button>
+        </div>
+    </div>
+    <div *ngSwitchCase="'setDelete'">
+        <p>{{ isDeleteCompleted ? '삭제요청 완료' : '부서원 "김OO"님을 1단계 결재권자에서 삭제하시겠습니까?' }}</p>
+        <div class="modal-footer-button">
+            <ng-container *ngIf="!isDeleteCompleted">
+                <app-base-button label="확인" styleClass="btnSave small" (click)="onConfirmDelete()"></app-base-button>
+                <app-base-button label="취소" styleClass="btnCancel small"></app-base-button>
+            </ng-container>
+            <ng-container *ngIf="isDeleteCompleted">
+                <app-base-button label="확인" styleClass="btnSave small"></app-base-button>
+            </ng-container>
+        </div>
+    </div>
+    <div *ngSwitchDefault>알 수 없는 타입입니다.</div>
+</ng-container>
